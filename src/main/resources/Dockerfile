@@ -18,6 +18,10 @@ RUN cd /root/ && unzip -q teamengine-console-*-base.zip -d /root/te_base
 # set TE_BASE
 ENV JAVA_OPTS="-Xms1024m -Xmx2048m -DTE_BASE=/root/te_base"
 
+# add ETS for WCS 1.1
+ADD ets-wcs11-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-wcs11-*-ctl.zip -d /root/te_base/scripts
+
 # add ETS for WFS 2.0
 ADD ets-wfs20-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wfs20-*-ctl.zip -d /root/te_base/scripts

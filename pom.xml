@@ -13,6 +13,7 @@
   </description>
 
   <properties>
+    <ets-wcs11.version>1.11</ets-wcs11.version>
     <ets-wfs20.version>1.26</ets-wfs20.version>
     <ets-wms13.version>1.21</ets-wms13.version>
     <teamengine.version>4.10</teamengine.version>
@@ -124,6 +125,14 @@
       <artifactId>teamengine-console</artifactId>
       <version>${teamengine.version}</version>
       <classifier>base</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS WCS 1.1 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wcs11</artifactId>
+      <version>${ets-wcs11.version}</version>
+      <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
     <!-- ETS WFS 2.0 -->
