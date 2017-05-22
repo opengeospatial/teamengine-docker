@@ -81,29 +81,199 @@
         <artifactId>docker-maven-plugin</artifactId>
         <version>0.4.13</version>
         <configuration>
-          <imageName>opengis/teamengine</imageName>
-          <dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>
+          <skipDocker>true</skipDocker>
           <resources>
             <resource>
               <targetPath>/</targetPath>
               <directory>${project.build.directory}</directory>
-              <include>teamengine-web-*.war</include>
-            </resource>
-            <resource>
-              <targetPath>/</targetPath>
-              <directory>${project.build.directory}</directory>
-              <includes>
-                <include>**/*.zip</include>
-              </includes>
-              <excludes>
-                <exclude>**/*.class</exclude>
-              </excludes>
+              <include>*teamengine-*.war</include>
+              <include>*teamengine-*.zip</include>
+              <include>*ets-*.zip</include>
             </resource>
           </resources>
         </configuration>
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>ets-all</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.spotify</groupId>
+            <artifactId>docker-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>ets-all</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>build</goal>
+                </goals>
+                <configuration>
+                  <skipDocker>false</skipDocker>
+                  <imageName>opengis/teamengine-ets-all</imageName>
+                  <dockerDirectory>${project.basedir}/src/main/resources/ets-all</dockerDirectory>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <dependencies>
+        <!-- ETS WCS 1.1 -->
+        <dependency>
+          <groupId>org.opengis.cite</groupId>
+          <artifactId>ets-wcs11</artifactId>
+          <version>${ets-wcs11.version}</version>
+          <classifier>ctl</classifier>
+          <type>zip</type>
+        </dependency>
+        <!-- ETS WFS 2.0 -->
+        <dependency>
+          <groupId>org.opengis.cite</groupId>
+          <artifactId>ets-wfs20</artifactId>
+          <version>${ets-wfs20.version}</version>
+          <classifier>ctl</classifier>
+          <type>zip</type>
+        </dependency>
+        <dependency>
+          <groupId>org.opengis.cite</groupId>
+          <artifactId>ets-wfs20</artifactId>
+          <version>${ets-wfs20.version}</version>
+          <classifier>deps</classifier>
+          <type>zip</type>
+        </dependency>
+        <!-- ETS WMS 1.3 -->
+        <dependency>
+          <groupId>org.opengis.cite</groupId>
+          <artifactId>ets-wms13</artifactId>
+          <version>${ets-wms13.version}</version>
+          <classifier>ctl</classifier>
+          <type>zip</type>
+        </dependency>
+      </dependencies>
+    </profile>
+
+    <profile>
+      <id>ets-wcs11</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.spotify</groupId>
+            <artifactId>docker-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>ets-wcs11</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>build</goal>
+                </goals>
+                <configuration>
+                  <skipDocker>false</skipDocker>
+                  <imageName>opengis/teamengine-ets-wcs11</imageName>
+                  <dockerDirectory>${project.basedir}/src/main/resources/ets-wcs11</dockerDirectory>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <dependencies>
+        <!-- ETS WCS 1.1 -->
+        <dependency>
+          <groupId>org.opengis.cite</groupId>
+          <artifactId>ets-wcs11</artifactId>
+          <version>${ets-wcs11.version}</version>
+          <classifier>ctl</classifier>
+          <type>zip</type>
+        </dependency>
+      </dependencies>
+    </profile>
+
+    <profile>
+      <id>ets-wfs20</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.spotify</groupId>
+            <artifactId>docker-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>ets-wfs20</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>build</goal>
+                </goals>
+                <configuration>
+                  <skipDocker>false</skipDocker>
+                  <imageName>opengis/teamengine-ets-wfs20</imageName>
+                  <dockerDirectory>${project.basedir}/src/main/resources/ets-wfs20</dockerDirectory>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <dependencies>
+        <!-- ETS WFS 2.0 -->
+        <dependency>
+          <groupId>org.opengis.cite</groupId>
+          <artifactId>ets-wfs20</artifactId>
+          <version>${ets-wfs20.version}</version>
+          <classifier>ctl</classifier>
+          <type>zip</type>
+        </dependency>
+        <dependency>
+          <groupId>org.opengis.cite</groupId>
+          <artifactId>ets-wfs20</artifactId>
+          <version>${ets-wfs20.version}</version>
+          <classifier>deps</classifier>
+          <type>zip</type>
+        </dependency>
+      </dependencies>
+    </profile>
+
+    <profile>
+      <id>ets-wms13</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.spotify</groupId>
+            <artifactId>docker-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>ets-wms13</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>build</goal>
+                </goals>
+                <configuration>
+                  <skipDocker>false</skipDocker>
+                  <imageName>opengis/teamengine-ets-wms13</imageName>
+                  <dockerDirectory>${project.basedir}/src/main/resources/ets-wms13</dockerDirectory>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <dependencies>
+        <!-- ETS WMS 1.3 -->
+        <dependency>
+          <groupId>org.opengis.cite</groupId>
+          <artifactId>ets-wms13</artifactId>
+          <version>${ets-wms13.version}</version>
+          <classifier>ctl</classifier>
+          <type>zip</type>
+        </dependency>
+      </dependencies>
+    </profile>
+  </profiles>
 
   <dependencies>
     <!-- TEAM Engine -->
@@ -127,36 +297,6 @@
       <classifier>base</classifier>
       <type>zip</type>
     </dependency>
-    <!-- ETS WCS 1.1 -->
-    <dependency>
-      <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-wcs11</artifactId>
-      <version>${ets-wcs11.version}</version>
-      <classifier>ctl</classifier>
-      <type>zip</type>
-    </dependency>
-    <!-- ETS WFS 2.0 -->
-    <dependency>
-      <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-wfs20</artifactId>
-      <version>${ets-wfs20.version}</version>
-      <classifier>ctl</classifier>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-wfs20</artifactId>
-      <version>${ets-wfs20.version}</version>
-      <classifier>deps</classifier>
-      <type>zip</type>
-    </dependency>
-    <!-- ETS WMS 1.3 -->
-    <dependency>
-      <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-wms13</artifactId>
-      <version>${ets-wms13.version}</version>
-      <classifier>ctl</classifier>
-      <type>zip</type>
-    </dependency>
   </dependencies>
+
 </project>
