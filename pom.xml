@@ -23,6 +23,7 @@
     <ets-wms13.version>1.22</ets-wms13.version>
     <ets-wmts10.version>0.7</ets-wmts10.version>
     <ets-csw202.version>1.16</ets-csw202.version>
+    <ets-cat30.version>1.0</ets-cat30.version>
     <teamengine.version>4.10</teamengine.version>
   </properties>
 
@@ -139,6 +140,7 @@
     <module>teamengine-ets-wms13</module>
     <module>teamengine-ets-wmts10</module>
     <module>teamengine-ets-csw202</module>
+    <module>teamengine-ets-cat30</module>
   </modules>
 
 </project>

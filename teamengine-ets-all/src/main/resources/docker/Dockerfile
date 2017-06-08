@@ -66,5 +66,11 @@ RUN cd /root/ && unzip -q ets-wmts10-*-ctl.zip -d /root/te_base/scripts
 ADD ets-csw20-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-csw20-*-ctl.zip -d /root/te_base/scripts
 
+# add ETS for CAT 3.0
+ADD ets-cat30-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-cat30-*-ctl.zip -d /root/te_base/scripts
+ADD ets-cat30-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-cat30-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
 # run tomcat
 CMD ["catalina.sh", "run"]
