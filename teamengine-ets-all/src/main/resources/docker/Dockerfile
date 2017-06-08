@@ -48,6 +48,12 @@ RUN cd /root/ && unzip -q ets-wfs20-*-ctl.zip -d /root/te_base/scripts
 ADD ets-wfs20-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-wfs20-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
+# add ETS for WMS 1.1
+ADD ets-wms11-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-wms11-*-ctl.zip -d /root/te_base/scripts
+ADD ets-wms11-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-wms11-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
 # add ETS for WMS 1.3
 ADD ets-wms13-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wms13-*-ctl.zip -d /root/te_base/scripts
