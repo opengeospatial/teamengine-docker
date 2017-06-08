@@ -154,5 +154,9 @@ RUN cd /root/ && unzip -q ets-wms-client13-*-ctl.zip -d /root/te_base/scripts
 ADD ets-wms-client13-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-wms-client13-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
+# add ETS for WPS 1.0
+ADD ets-wps10-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-wps10-*-ctl.zip -d /root/te_base/scripts
+
 # run tomcat
 CMD ["catalina.sh", "run"]

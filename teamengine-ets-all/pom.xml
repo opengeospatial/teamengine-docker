@@ -346,6 +346,14 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS WPS 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wps10</artifactId>
+      <version>${ets-wps10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>

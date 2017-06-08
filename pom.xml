@@ -40,6 +40,7 @@
     <ets-sps20.version>1.10</ets-sps20.version>
     <ets-sta10.version>1.0</ets-sta10.version>
     <ets-wms-client13.version>1.2</ets-wms-client13.version>
+    <ets-wps10.version>0.6</ets-wps10.version>
     <teamengine.version>4.10</teamengine.version>
   </properties>
 
@@ -173,6 +174,7 @@
     <module>teamengine-ets-sps20</module>
     <module>teamengine-ets-sta10</module>
     <module>teamengine-ets-wms-client13</module>
+    <module>teamengine-ets-wps10</module>
   </modules>
 
 </project>
