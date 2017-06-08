@@ -253,6 +253,21 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS Sensor Model Language 2.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-sensorml20</artifactId>
+      <version>${ets-sensorml20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-sensorml20</artifactId>
+      <version>${ets-sensorml20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>

@@ -31,6 +31,7 @@
     <ets-kml2.version>0.5</ets-kml2.version>
     <ets-owc10.version>0.1</ets-owc10.version>
     <ets-sensorml10.version>0.8</ets-sensorml10.version>
+    <ets-sensorml20.version>0.6</ets-sensorml20.version>
     <teamengine.version>4.10</teamengine.version>
   </properties>
 
@@ -155,6 +156,7 @@
     <module>teamengine-ets-kml2</module>
     <module>teamengine-ets-owc10</module>
     <module>teamengine-ets-sensorml10</module>
+    <module>teamengine-ets-sensorml20</module>
   </modules>
 
 </project>

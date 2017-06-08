@@ -112,5 +112,11 @@ RUN cd /root/ && unzip -q -o ets-owc10-*-deps.zip -d /usr/local/tomcat/webapps/t
 ADD ets-sensorml10-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-sensorml10-*-ctl.zip -d /root/te_base/scripts
 
+# add ETS for Sensor Model Language 2.0
+ADD ets-sensorml20-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-sensorml20-*-ctl.zip -d /root/te_base/scripts
+ADD ets-sensorml20-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-sensorml20-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
 # run tomcat
 CMD ["catalina.sh", "run"]
