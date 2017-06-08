@@ -122,5 +122,9 @@ RUN cd /root/ && unzip -q -o ets-sensorml20-*-deps.zip -d /usr/local/tomcat/weba
 ADD ets-sfs11-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-sfs11-*-ctl.zip -d /root/te_base/scripts
 
+# add ETS for SFS 1.2
+ADD ets-sfs12-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-sfs12-*-ctl.zip -d /root/te_base/scripts
+
 # run tomcat
 CMD ["catalina.sh", "run"]
