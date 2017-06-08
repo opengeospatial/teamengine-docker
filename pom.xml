@@ -21,6 +21,7 @@
     <ets-wfs20.version>1.26</ets-wfs20.version>
     <ets-wms11.version>1.15</ets-wms11.version>
     <ets-wms13.version>1.22</ets-wms13.version>
+    <ets-wmts10.version>0.7</ets-wmts10.version>
     <teamengine.version>4.10</teamengine.version>
   </properties>
 
@@ -135,6 +136,7 @@
     <module>teamengine-ets-wfs20</module>
     <module>teamengine-ets-wms11</module>
     <module>teamengine-ets-wms13</module>
+    <module>teamengine-ets-wmts10</module>
   </modules>
 
 </project>

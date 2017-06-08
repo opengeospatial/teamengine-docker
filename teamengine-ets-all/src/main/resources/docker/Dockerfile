@@ -58,5 +58,9 @@ RUN cd /root/ && unzip -q -o ets-wms11-*-deps.zip -d /usr/local/tomcat/webapps/t
 ADD ets-wms13-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wms13-*-ctl.zip -d /root/te_base/scripts
 
+# add ETS for WMTS 1.0
+ADD ets-wmts10-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-wmts10-*-ctl.zip -d /root/te_base/scripts
+
 # run tomcat
 CMD ["catalina.sh", "run"]

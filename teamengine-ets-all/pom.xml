@@ -124,6 +124,14 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS WMTS 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wmts10</artifactId>
+      <version>${ets-wmts10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>
