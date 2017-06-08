@@ -90,5 +90,11 @@ RUN cd /root/ && unzip -q ets-gpkg12-*-ctl.zip -d /root/te_base/scripts
 ADD ets-gpkg12-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-gpkg12-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
+# add ETS for KML 2.2
+ADD ets-kml22-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-kml22-*-ctl.zip -d /root/te_base/scripts
+ADD ets-kml22-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-kml22-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
 # run tomcat
 CMD ["catalina.sh", "run"]
