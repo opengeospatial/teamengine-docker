@@ -56,6 +56,21 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS WFS 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wfs10</artifactId>
+      <version>${ets-wfs10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wfs10</artifactId>
+      <version>${ets-wfs10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS WFS 2.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
