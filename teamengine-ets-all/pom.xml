@@ -268,6 +268,14 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS SFS 1.1 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-sfs11</artifactId>
+      <version>${ets-sfs11.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>
