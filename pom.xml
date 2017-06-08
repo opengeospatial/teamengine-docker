@@ -37,6 +37,7 @@
     <ets-sos10.version>1.13</ets-sos10.version>
     <ets-sos20.version>1.13</ets-sos20.version>
     <ets-sps10.version>1.7</ets-sps10.version>
+    <ets-sps20.version>1.10</ets-sps20.version>
     <teamengine.version>4.10</teamengine.version>
   </properties>
 
@@ -167,6 +168,7 @@
     <module>teamengine-ets-sos10</module>
     <module>teamengine-ets-sos20</module>
     <module>teamengine-ets-sps10</module>
+    <module>teamengine-ets-sps20</module>
   </modules>
 
 </project>

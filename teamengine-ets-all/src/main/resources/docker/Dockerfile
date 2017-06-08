@@ -138,5 +138,9 @@ RUN cd /root/ && unzip -q ets-sos20-*-ctl.zip -d /root/te_base/scripts
 ADD ets-sps10-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-sps10-*-ctl.zip -d /root/te_base/scripts
 
+# add ETS for SPS 2.0
+ADD ets-sps20-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-sps20-*-ctl.zip -d /root/te_base/scripts
+
 # run tomcat
 CMD ["catalina.sh", "run"]

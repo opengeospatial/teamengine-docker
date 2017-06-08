@@ -300,11 +300,19 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
-    <!-- ETS SPS 2.0 -->
+    <!-- ETS SPS 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-sps10</artifactId>
       <version>${ets-sps10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS SPS 2.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-sps20</artifactId>
+      <version>${ets-sps20.version}</version>
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
