@@ -24,6 +24,7 @@
     <ets-wmts10.version>0.7</ets-wmts10.version>
     <ets-csw202.version>1.16</ets-csw202.version>
     <ets-cat30.version>1.0</ets-cat30.version>
+    <ets-gml32.version>1.25</ets-gml32.version>
     <teamengine.version>4.10</teamengine.version>
   </properties>
 
@@ -141,6 +142,7 @@
     <module>teamengine-ets-wmts10</module>
     <module>teamengine-ets-csw202</module>
     <module>teamengine-ets-cat30</module>
+    <module>teamengine-ets-gml32</module>
   </modules>
 
 </project>
