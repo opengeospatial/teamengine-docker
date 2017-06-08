@@ -102,5 +102,11 @@ RUN cd /root/ && unzip -q ets-kml2-*-ctl.zip -d /root/te_base/scripts
 ADD ets-kml2-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-kml2-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
+# add ETS for OWC 1.0
+ADD ets-owc10-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-owc10-*-ctl.zip -d /root/te_base/scripts
+ADD ets-owc10-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-owc10-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
 # run tomcat
 CMD ["catalina.sh", "run"]
