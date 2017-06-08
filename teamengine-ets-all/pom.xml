@@ -284,6 +284,14 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS SOS 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-sos10</artifactId>
+      <version>${ets-sos10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>

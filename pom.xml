@@ -34,6 +34,7 @@
     <ets-sensorml20.version>0.6</ets-sensorml20.version>
     <ets-sfs11.version>1.6</ets-sfs11.version>
     <ets-sfs12.version>1.4</ets-sfs12.version>
+    <ets-sos10.version>1.13</ets-sos10.version>
     <teamengine.version>4.10</teamengine.version>
   </properties>
 
@@ -161,6 +162,7 @@
     <module>teamengine-ets-sensorml20</module>
     <module>teamengine-ets-sfs11</module>
     <module>teamengine-ets-sfs12</module>
+    <module>teamengine-ets-sos10</module>
   </modules>
 
 </project>
