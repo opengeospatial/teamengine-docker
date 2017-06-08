@@ -26,6 +26,7 @@
     <ets-cat30.version>1.0</ets-cat30.version>
     <ets-gml32.version>1.25</ets-gml32.version>
     <ets-gpkg10.version>1.0</ets-gpkg10.version>
+    <ets-gpkg12.version>0.1</ets-gpkg12.version>
     <teamengine.version>4.10</teamengine.version>
   </properties>
 
@@ -145,6 +146,7 @@
     <module>teamengine-ets-cat30</module>
     <module>teamengine-ets-gml32</module>
     <module>teamengine-ets-gpkg10</module>
+    <module>teamengine-ets-gpkg12</module>
   </modules>
 
 </project>
