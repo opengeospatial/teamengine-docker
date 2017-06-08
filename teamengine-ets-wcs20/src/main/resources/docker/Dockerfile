@@ -18,27 +18,9 @@ RUN cd /root/ && unzip -q teamengine-console-*-base.zip -d /root/te_base
 # set TE_BASE
 ENV JAVA_OPTS="-Xms1024m -Xmx2048m -DTE_BASE=/root/te_base"
 
-# add ETS for WCS 1.0
-ADD ets-wcs10-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-wcs10-*-ctl.zip -d /root/te_base/scripts
-
-# add ETS for WCS 1.1
-ADD ets-wcs11-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-wcs11-*-ctl.zip -d /root/te_base/scripts
-
 # add ETS for WCS 2.0
 ADD ets-wcs20-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wcs20-*-ctl.zip -d /root/te_base/scripts
-
-# add ETS for WFS 2.0
-ADD ets-wfs20-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-wfs20-*-ctl.zip -d /root/te_base/scripts
-ADD ets-wfs20-*-deps.zip /root/
-RUN cd /root/ && unzip -q -o ets-wfs20-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
-
-# add ETS for WMS 1.3
-ADD ets-wms13-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-wms13-*-ctl.zip -d /root/te_base/scripts
 
 # run tomcat
 CMD ["catalina.sh", "run"]
