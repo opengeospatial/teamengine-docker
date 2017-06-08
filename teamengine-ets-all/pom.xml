@@ -170,6 +170,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS GeoPackage 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-gpkg10</artifactId>
+      <version>${ets-gpkg10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-gpkg10</artifactId>
+      <version>${ets-gpkg10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>

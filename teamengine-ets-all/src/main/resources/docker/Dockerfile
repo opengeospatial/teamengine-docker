@@ -78,5 +78,11 @@ RUN cd /root/ && unzip -q ets-gml32-*-ctl.zip -d /root/te_base/scripts
 ADD ets-gml32-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-gml32-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
+# add ETS for GeoPackage 1.0
+ADD ets-gpkg10-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-gpkg10-*-ctl.zip -d /root/te_base/scripts
+ADD ets-gpkg10-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-gpkg10-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
 # run tomcat
 CMD ["catalina.sh", "run"]
