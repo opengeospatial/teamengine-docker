@@ -62,5 +62,9 @@ RUN cd /root/ && unzip -q ets-wms13-*-ctl.zip -d /root/te_base/scripts
 ADD ets-wmts10-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wmts10-*-ctl.zip -d /root/te_base/scripts
 
+# add ETS for CSW 2.0.2
+ADD ets-csw20-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-csw20-*-ctl.zip -d /root/te_base/scripts
+
 # run tomcat
 CMD ["catalina.sh", "run"]

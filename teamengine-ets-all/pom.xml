@@ -132,6 +132,14 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS CSW 2.0.2 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-csw20</artifactId>
+      <version>${ets-csw202.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>
