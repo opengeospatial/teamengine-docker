@@ -28,6 +28,7 @@
     <ets-gpkg10.version>1.0</ets-gpkg10.version>
     <ets-gpkg12.version>0.1</ets-gpkg12.version>
     <ets-kml22.version>1.12</ets-kml22.version>
+    <ets-kml2.version>0.5</ets-kml2.version>
     <teamengine.version>4.10</teamengine.version>
   </properties>
 
@@ -149,6 +150,7 @@
     <module>teamengine-ets-gpkg10</module>
     <module>teamengine-ets-gpkg12</module>
     <module>teamengine-ets-kml22</module>
+    <module>teamengine-ets-kml2</module>
   </modules>
 
 </project>
