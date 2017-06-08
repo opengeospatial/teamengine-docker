@@ -13,6 +13,7 @@
   </description>
 
   <properties>
+    <ets-wcs10.version>1.13</ets-wcs10.version>
     <ets-wcs11.version>1.12</ets-wcs11.version>
     <ets-wfs20.version>1.26</ets-wfs20.version>
     <ets-wms13.version>1.22</ets-wms13.version>
@@ -122,6 +123,7 @@
 
   <modules>
     <module>teamengine-ets-all</module>
+    <module>teamengine-ets-wcs10</module>
     <module>teamengine-ets-wcs11</module>
     <module>teamengine-ets-wfs20</module>
     <module>teamengine-ets-wms13</module>
