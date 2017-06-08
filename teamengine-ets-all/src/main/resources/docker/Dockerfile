@@ -142,5 +142,11 @@ RUN cd /root/ && unzip -q ets-sps10-*-ctl.zip -d /root/te_base/scripts
 ADD ets-sps20-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-sps20-*-ctl.zip -d /root/te_base/scripts
 
+# add ETS for STA 1.0
+ADD ets-sta10-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-sta10-*-ctl.zip -d /root/te_base/scripts
+ADD ets-sta10-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-sta10-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
 # run tomcat
 CMD ["catalina.sh", "run"]
