@@ -1,13 +1,38 @@
-# Running OGC TEAM Engine with ETS for WFS 2.0 on Docker
+# Running OGC TEAM Engine with selected executable test suites on Docker
 
-This module provides a Dockerfile for building a Docker image with OGC TEAM Engine and selected  executable test suite pre-installed.
+This project provides Dockerfiles for building Docker images with OGC TEAM Engine and selected executable test suites pre-installed.
 
-## Profiles
-Currently the following profiles are available, they differ in the available executable test suite:
- * ets-all (includes the executable testsuites for WMS 1.3, WFS 2.0 and WCS 1.1; default)
- * ets-wms13 (includes the executable testsuite for WMS 1.3)
- * ets-wfs20 (includes the executable testsuite for WFS 2.0)
- * ets-wcs11 (includes the executable testsuite for WCS 1.1)
+## Modules
+Currently the following modules are available. They differ in the available executable test suite(s).
+ * teamengine-ets-all - Includes TEAM Engine and all executable test suites listed below.
+ * teamengine-ets-cat30 - Includes TEAM Engine and the executable test suite for CAT 3.0.
+ * teamengine-ets-csw202 - Includes TEAM Engine and the executable test suite for CSW 2.0.2.
+ * teamengine-ets-gml32 - Includes TEAM Engine and the executable test suite for GML 3.2.
+ * teamengine-ets-gpkg10 - Includes TEAM Engine and the executable test suite for GeoPackage 1.0.
+ * teamengine-ets-gpkg12 - Includes TEAM Engine and the executable test suite for GeoPackage 1.2.
+ * teamengine-ets-kml2 - Includes TEAM Engine and the executable test suite for KML 2.
+ * teamengine-ets-kml22 - Includes TEAM Engine and the executable test suite for KML 2.2.
+ * teamengine-ets-owc10 - Includes TEAM Engine and the executable test suite for OWC 1.0.
+ * teamengine-ets-sensorml10 - Includes TEAM Engine and the executable test suite for Sensor Model Language 1.0.
+ * teamengine-ets-sensorml20 - Includes TEAM Engine and the executable test suite for Sensor Model Language 2.0.
+ * teamengine-ets-sfs11 - Includes TEAM Engine and the executable test suite for SFS 1.1.
+ * teamengine-ets-sfs12 - Includes TEAM Engine and the executable test suite for SFS 1.2.
+ * teamengine-ets-sos10 - Includes TEAM Engine and the executable test suite for SOS 1.0.
+ * teamengine-ets-sos20 - Includes TEAM Engine and the executable test suite for SOS 2.0.
+ * teamengine-ets-sps10 - Includes TEAM Engine and the executable test suite for SPS 1.0.
+ * teamengine-ets-sps20 - Includes TEAM Engine and the executable test suite for SPS 2.0.
+ * teamengine-ets-sta10 - Includes TEAM Engine and the executable test suite for STA 1.0.
+ * teamengine-ets-wcs10 - Includes TEAM Engine and the executable test suite for WCS 1.0.
+ * teamengine-ets-wcs11 - Includes TEAM Engine and the executable test suite for WCS 1.1.
+ * teamengine-ets-wcs20 - Includes TEAM Engine and the executable test suite for WCS 2.0.
+ * teamengine-ets-wfs10 - Includes TEAM Engine and the executable test suite for WFS 1.0.
+ * teamengine-ets-wfs11 - Includes TEAM Engine and the executable test suite for WFS 1.0.
+ * teamengine-ets-wfs20 - Includes TEAM Engine and the executable test suite for WFS 2.0.
+ * teamengine-ets-wms11 - Includes TEAM Engine and the executable test suite for WMS 1.1.
+ * teamengine-ets-wms13 - Includes TEAM Engine and the executable test suite for WMS 1.3.
+ * teamengine-ets-wms-client13 - Includes TEAM Engine and the executable test suite for WMS Client 1.3.
+ * teamengine-ets-wmts10 - Includes TEAM Engine and the executable test suite for WMTS 1.0.
+ * teamengine-ets-wps10 - Includes TEAM Engine and the executable test suite for WPS 1.0.
 
 ## Prerequisites
 
@@ -19,76 +44,80 @@ Check the official [Docker documentation](https://docs.docker.com/engine/) for i
 ### Dependencies
 Dependent on which executable test suites are required several dependencies must be build first.
 
-Note: You can use any versions of the TEAM Engine and ETS.
+Note: You can use any versions of the TEAM Engine and executable test suites.
 Just update the versions set in the properties in the pom.xml.
-Also, use the correct versions when building the TEAM Engine and ETS by setting ```git checkout tags/version``` to the demanded version.
 
-#### Build the TEAM Engine:
+#### Build TEAM Engine:
 
-Per default Version 4.10 is used.
+Per default version 4.10 is used.
 
     % git clone https://github.com/opengeospatial/teamengine.git
     % cd teamengine
     % git checkout tags/4.10
     % mvn clean install
 
-#### Build the ETS for WMS 1.3:
+If other TEAM Engine version is demanded, the version value must be adjusted.
 
-Per default Version 1.22 is used.
+#### Build an executable test suite:
+
+Example for building ETS for WMS 1.3 version 1.22.
 
     % git clone https://github.com/opengeospatial/ets-wms13.git
     % cd ets-wms13
     % git checkout tags/1.22
     % mvn clean install
 
-#### Build the ETS for WFS 2.0:
-
-Per default Version 1.26 is used.
-
-    % git clone https://github.com/opengeospatial/ets-wfs20.git
-    % cd ets-wfs20
-    % git checkout tags/1.26
-    % mvn clean install
-
-#### Build the ETS for WCS 1.1:
-
-Per default Version 1.12 is used.
-
-    % git clone https://github.com/opengeospatial/ets-wcs11.git
-    % cd ets-wcs11
-    % git checkout tags/1.12
-    % mvn clean install
+If other test suites are required, the repository path and version value must be adjusted.
 
 ## Build the Docker image
 
-To build the Docker image with all currently available executable test suites run the Maven goals:
+To build a Docker image with TEAM Engine and all selected executable test suites run the Maven goals:
 
     % mvn clean package docker:build
 
 This will build a new Docker image from scratch. It may take a while the first time since Docker will download some base images from [docker hub](https://hub.docker.com).
 
-Check if the Docker image has been built successfully with:
-
-    % docker images
-
-The profiles described above can be used to control the executable test tesuites running in the teamengine. To build a Docker image with the test suite for WMS 1.3 append the name of this profile (parameter ```-Pets-wms13```):
-
-    % mvn clean package docker:build -Pets-wms13
+If the command is executed in the root directory of this project, all modules are built.
+If just a single Docker image is required (e.g. TEAM Engine with all available executable test suites or TEAM Engine with ETS for WMS 1.3), navigate to the corresponding module and execute the built there.
 
 ## Running TEAM Engine inside a Docker container
 
-The following Docker command starts the TEAM Engine inside the Docker container with the name ```teamengine``` on port 8088
-with the previously built Docker image named ```opengis/teamengine-ets-all``` (if a profile was used the name can be taken from the output of ```% docker images```):
+The following Docker command starts the TEAM Engine with all available executable test suites inside a Docker container with the context name ```teamengine``` on port 8081 with the previously built Docker image named ```opengis/teamengine-ets-all```:
 
-    % docker run -p 8088:8080 --name teamengine --rm opengis/teamengine-ets-all
+    % docker run -p 8081:8080 --name teamengine --rm opengis/teamengine-ets-all
+
+To start TEAM Engine with a single executable test suite, just adjust the second part of the image name to the name of the required module.
+Example for starting the TEAM Engine with ETS for WMS 1.3 (name of Docker image is ```opengis/teamengine-ets-wms13```):
+
+    % docker run -p 8081:8080 --name teamengine --rm opengis/teamengine-ets-wms13
 
 ## Accessing the TEAM Engine web interface
 
 Use a browser of your choice and open the URL:
 
-http://container-ip:8088/teamengine
+http://container-ip:8081/teamengine
 
 If your are running Docker on Windows or OS X with docker-machine check the IP with ```docker-machine ip```.
-On Linux it is most likely localhost/127.0.0.1 on Windows and macOS it might be a IP like:
 
-http://192.168.99.100:8088/teamengine
+On Linux it is most likely localhost/127.0.0.1:
+
+http://localhost:8081/teamengine
+
+On Windows and macOS it might be a IP like:
+
+http://192.168.99.100:8081/teamengine
+
+## Hints for developer
+
+If deployment of a SNAPSHOT version of an ETS is required during development, the demanded version can be set in the build command.
+
+Of course, the SNAPSHOT of the ETS has to be built first so that it is available in local Maven repository.
+
+Execute the build command and add a ```-D``` argument which changes the value of a version property.
+Example for building Docker image with ETS for WMS 1.3 version 1.23-SNAPSHOT:
+
+    % mvn clean package docker:build -Dets-wms13.version=1.23-SNAPSHOT
+
+Following command can be used to build a Docker image with a SNAPSHOT version and immediately create and start the Docker container (just one command for complete deployment!):
+
+    % mvn clean package docker:build -Dets-wms13.version=1.23-SNAPSHOT && docker run -p 8081:8080 --name teamengine --rm opengis/teamengine-ets-wms13
