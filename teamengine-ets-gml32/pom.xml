@@ -24,7 +24,6 @@
         <configuration>
           <skipDocker>false</skipDocker>
           <imageName>opengis/${project.artifactId}</imageName>
-          <dockerDirectory>${project.basedir}/src/main/resources/docker</dockerDirectory>
         </configuration>
       </plugin>
     </plugins>
