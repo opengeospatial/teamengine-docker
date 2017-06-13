@@ -12,6 +12,38 @@
     for running TEAM engine on Docker.
   </description>
 
+  <properties>
+    <ets-wcs10.version>1.13</ets-wcs10.version>
+    <ets-wcs11.version>1.12</ets-wcs11.version>
+    <ets-wcs20.version>1.12</ets-wcs20.version>
+    <ets-wfs10.version>1.11</ets-wfs10.version>
+    <ets-wfs11.version>1.29</ets-wfs11.version>
+    <ets-wfs20.version>1.26</ets-wfs20.version>
+    <ets-wms11.version>1.15</ets-wms11.version>
+    <ets-wms13.version>1.22</ets-wms13.version>
+    <ets-wmts10.version>0.7</ets-wmts10.version>
+    <ets-csw202.version>1.16</ets-csw202.version>
+    <ets-cat30.version>1.0</ets-cat30.version>
+    <ets-gml32.version>1.25</ets-gml32.version>
+    <ets-gpkg10.version>1.0</ets-gpkg10.version>
+    <ets-gpkg12.version>0.1</ets-gpkg12.version>
+    <ets-kml22.version>1.12</ets-kml22.version>
+    <ets-kml2.version>0.5</ets-kml2.version>
+    <ets-owc10.version>0.1</ets-owc10.version>
+    <ets-sensorml10.version>0.8</ets-sensorml10.version>
+    <ets-sensorml20.version>0.6</ets-sensorml20.version>
+    <ets-sfs11.version>1.6</ets-sfs11.version>
+    <ets-sfs12.version>1.4</ets-sfs12.version>
+    <ets-sos10.version>1.13</ets-sos10.version>
+    <ets-sos20.version>1.13</ets-sos20.version>
+    <ets-sps10.version>1.7</ets-sps10.version>
+    <ets-sps20.version>1.10</ets-sps20.version>
+    <ets-sta10.version>1.0</ets-sta10.version>
+    <ets-wms-client13.version>1.2</ets-wms-client13.version>
+    <ets-wps10.version>0.6</ets-wps10.version>
+    <teamengine.version>4.10</teamengine.version>
+  </properties>
+
   <organization>
     <name>Open Geospatial Consortium</name>
     <url>http://www.opengeospatial.org/</url>
@@ -47,11 +79,6 @@
     <tag>HEAD</tag>
   </scm>
 
-  <properties>
-    <teamengine.version>4.10</teamengine.version>
-    <ets-wfs20.version>1.26</ets-wfs20.version>
-  </properties>
-
   <build>
     <plugins>
       <plugin>
@@ -79,23 +106,15 @@
         <artifactId>docker-maven-plugin</artifactId>
         <version>0.4.13</version>
         <configuration>
-          <imageName>opengis/teamengine</imageName>
-          <dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>
+          <skipDocker>true</skipDocker>
+          <dockerDirectory>${project.basedir}/src/main/resources/docker</dockerDirectory>
           <resources>
             <resource>
               <targetPath>/</targetPath>
               <directory>${project.build.directory}</directory>
-              <include>teamengine-web-*.war</include>
-            </resource>
-            <resource>
-              <targetPath>/</targetPath>
-              <directory>${project.build.directory}</directory>
-              <includes>
-                <include>**/*.zip</include>
-              </includes>
-              <excludes>
-                <exclude>**/*.class</exclude>
-              </excludes>
+              <include>*teamengine-*.war</include>
+              <include>*teamengine-*.zip</include>
+              <include>*ets-*.zip</include>
             </resource>
           </resources>
         </configuration>
@@ -104,6 +123,7 @@
   </build>
 
   <dependencies>
+    <!-- TEAM Engine -->
     <dependency>
       <groupId>org.opengis.cite.teamengine</groupId>
       <artifactId>teamengine-web</artifactId>
@@ -124,19 +144,38 @@
       <classifier>base</classifier>
       <type>zip</type>
     </dependency>
-    <dependency>
-      <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-wfs20</artifactId>
-      <version>${ets-wfs20.version}</version>
-      <classifier>ctl</classifier>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-wfs20</artifactId>
-      <version>${ets-wfs20.version}</version>
-      <classifier>deps</classifier>
-      <type>zip</type>
-    </dependency>
   </dependencies>
+
+  <modules>
+    <module>teamengine-ets-all</module>
+    <module>teamengine-ets-wcs10</module>
+    <module>teamengine-ets-wcs11</module>
+    <module>teamengine-ets-wcs20</module>
+    <module>teamengine-ets-wfs10</module>
+    <module>teamengine-ets-wfs11</module>
+    <module>teamengine-ets-wfs20</module>
+    <module>teamengine-ets-wms11</module>
+    <module>teamengine-ets-wms13</module>
+    <module>teamengine-ets-wmts10</module>
+    <module>teamengine-ets-csw202</module>
+    <module>teamengine-ets-cat30</module>
+    <module>teamengine-ets-gml32</module>
+    <module>teamengine-ets-gpkg10</module>
+    <module>teamengine-ets-gpkg12</module>
+    <module>teamengine-ets-kml22</module>
+    <module>teamengine-ets-kml2</module>
+    <module>teamengine-ets-owc10</module>
+    <module>teamengine-ets-sensorml10</module>
+    <module>teamengine-ets-sensorml20</module>
+    <module>teamengine-ets-sfs11</module>
+    <module>teamengine-ets-sfs12</module>
+    <module>teamengine-ets-sos10</module>
+    <module>teamengine-ets-sos20</module>
+    <module>teamengine-ets-sps10</module>
+    <module>teamengine-ets-sps20</module>
+    <module>teamengine-ets-sta10</module>
+    <module>teamengine-ets-wms-client13</module>
+    <module>teamengine-ets-wps10</module>
+  </modules>
+
 </project>
