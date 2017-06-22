@@ -123,3 +123,17 @@ Example for building Docker image with ETS for WMS 1.3 version 1.23-SNAPSHOT:
 Following command can be used to build a Docker image with a SNAPSHOT version and immediately create and start the Docker container (just one command for complete deployment!):
 
     % mvn clean package docker:build -Dets-wms13.version=1.23-SNAPSHOT && docker run -p 8081:8080 --name teamengine --rm opengis/teamengine-ets-wms13
+
+## Hints for usage in production
+
+### Mount user data from host system
+
+User data should be backed up regularly as they contain all registered users and the corresponding test runs.
+An easy way to achieve this is to hold these data on the host system. By that they can be backed up by simple file system backups. Also, the data can easily be copied and used by different Docker containers.
+
+So, the user data folder must be mounted into the Docker container.
+With the ```-v``` flag a host system directory can be mounted as a data volume.
+
+This is an example how to mount the ~/te_base/users (Linux syntax) folder (is created if not existing) of host system into Docker container:
+
+    % docker run -p 8081:8080 --name teamengine -v ~/te_base/users:/root/te_base/users --rm opengis/teamengine-ets-all
