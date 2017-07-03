@@ -3,6 +3,7 @@
 This project provides Dockerfiles for building Docker images with OGC TEAM Engine and selected executable test suites pre-installed.
 
 ## Modules
+
 Currently, following modules are available. They differ in the available executable test suite(s).
 
 | Module name | Description |
@@ -37,7 +38,30 @@ Currently, following modules are available. They differ in the available executa
 | teamengine-ets-wmts10 | Includes TEAM Engine and the executable test suite for WMTS 1.0. |
 | teamengine-ets-wps10 | Includes TEAM Engine and the executable test suite for WPS 1.0. |
 
+## Introduction
+
+Running the Docker containers with pre-installed OGC TEAM Engine and selected executable test suites from the provided Dockerfiles needs some preparations:
+
+ * install Docker
+ * clone required Github repositories
+ * build required Maven projects
+ * build Docker image with Maven
+ * start Docker image
+
+The steps are described in the following sections.
+
+### Requirements
+
+The following software is required for the complete workflow (from git clone to the running Docker container). The specified versions are the tested ones. Other versions should also work.
+
+ * JDK 1.8
+ * Git 2.9.3
+ * Maven 3.3.9
+ * Docker 1.12
+
 ## Prerequisites
+
+Before you start to work with this project, Docker has to be installed and all dependencies be provided as described in the following sections.
 
 ### Install Docker
 
