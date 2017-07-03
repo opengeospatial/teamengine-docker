@@ -39,6 +39,25 @@ Currently, following modules are available. They differ in the available executa
 
 ## Prerequisites
 
+Running the Docker containers with pre-installed OGC TEAM Engine and selected executable test suites from the provided Dockerfiles needs some preparations:
+
+ * install Docker
+ * clone required github repositories
+ * build required maven projects
+ * build Docker image with maven
+ * start Docker image
+
+The steps are described in the following sections.
+
+### Requirements
+
+The following software is required for the complete workflow (from git clone to the running Docker container). The specified versions are the tested one. Other versions should also work.
+
+ * JDK 1.8
+ * git 2.9.3
+ * Maven 3.3.9
+ * Docker 1.12
+
 ### Install Docker
 
 Check the official [Docker documentation](https://docs.docker.com/engine/) for information how to
