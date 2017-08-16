@@ -115,7 +115,7 @@ If the command is executed in the root directory of this project, all modules ar
 
 If only some of the tests were build (using the steps from WMS 1.3 as described bellow) an error might occur because mavn modules for some tests might be missing. An error like the follwoing will be presented::
 
-[ERROR] Failed to execute goal on project teamengine-ets-all: Could not resolve dependencies for project org.opengis.cite:teamengine-ets-all:pom:1.0-SNAPSHOT: The following artifacts could not be resolved: org.opengis.cite:ets-kml2:zip:ctl:0.5, org.opengis.cite:ets-kml2:zip:deps:0.5, org.opengis.cite:ets-owc10:zip:ctl:0.1, org.opengis.cite:ets-owc10:zip:deps:0.1: Could not find artifact org.opengis.cite:ets-kml2:zip:ctl:0.5 in opengeospatial-cite (https://svn.opengeospatial.org/ogc-projects/cite/maven) -> [Help 1]
+    [ERROR] Failed to execute goal on project teamengine-ets-all: Could not resolve dependencies for project org.opengis.cite:teamengine-ets-all:pom:1.0-SNAPSHOT: The following artifacts could not be resolved: org.opengis.cite:ets-kml2:zip:ctl:0.5, org.opengis.cite:ets-kml2:zip:deps:0.5, org.opengis.cite:ets-owc10:zip:ctl:0.1, org.opengis.cite:ets-owc10:zip:deps:0.1: Could not find artifact org.opengis.cite:ets-kml2:zip:ctl:0.5 in opengeospatial-cite (https://svn.opengeospatial.org/ogc-projects/cite/maven) -> [Help 1]
 
 If just a single Docker image is required (e.g. TEAM Engine with all available executable test suites or TEAM Engine with ETS for WMS 1.3), navigate to the corresponding module and execute the built there. For example, following this examples, for WMS 1.3 do the following:
 
