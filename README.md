@@ -137,16 +137,8 @@ Example for starting the TEAM Engine with ETS for WMS 1.3 (name of Docker image 
 
 Use a browser of your choice and open the URL:
 
-http://container-ip:8081/teamengine
-
-On Linux it is most likely localhost/127.0.0.1:
-
 http://localhost:8081/teamengine
 
-If your are running Docker on Windows or OS X with docker-machine check the IP with ```docker-machine ip```.
-On Windows and macOS it might be a IP like:
-
-http://192.168.99.100:8081/teamengine
 
 ## Hints for developer
 
