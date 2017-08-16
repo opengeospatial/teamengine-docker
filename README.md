@@ -82,6 +82,8 @@ Per default version 4.10 is used.
     % cd teamengine
     % git checkout tags/4.10
     % mvn clean install
+    
+Running the previous commands will make available the TEAM Engine project in the local mvn repository.    
 
 If other TEAM Engine version is demanded, the version value must be adjusted.
 
@@ -94,25 +96,38 @@ Example for building ETS for WMS 1.3 version 1.22.
     % git checkout tags/1.22
     % mvn clean install
 
+Running the previous commands will make available the WMS 1.3 test scritps in the local mvn repository.    
+
 If other test suites are required, the repository path and version value must be adjusted.
 
-## Build the Docker image
+### Build TEAM Engine Docker Image
+
 
 To build a Docker image with TEAM Engine and all selected executable test suites run the Maven goals:
-
+   
+    % git clone https://github.com/opengeospatial/teamengine-docker.git
+    % cd teamengine-docker 
     % mvn clean package docker:build
 
 This will build a new Docker image from scratch. It may take a while the first time since Docker will download some base images from [Docker Hub](https://hub.docker.com).
 
 If the command is executed in the root directory of this project, all modules are built.
-If just a single Docker image is required (e.g. TEAM Engine with all available executable test suites or TEAM Engine with ETS for WMS 1.3), navigate to the corresponding module and execute the built there.
+
+If only some of the tests were build (using the steps from WMS 1.3 as described bellow) an error might occur because mavn modules for some tests might be missing. An error like the follwoing will be presented::
+
+[ERROR] Failed to execute goal on project teamengine-ets-all: Could not resolve dependencies for project org.opengis.cite:teamengine-ets-all:pom:1.0-SNAPSHOT: The following artifacts could not be resolved: org.opengis.cite:ets-kml2:zip:ctl:0.5, org.opengis.cite:ets-kml2:zip:deps:0.5, org.opengis.cite:ets-owc10:zip:ctl:0.1, org.opengis.cite:ets-owc10:zip:deps:0.1: Could not find artifact org.opengis.cite:ets-kml2:zip:ctl:0.5 in opengeospatial-cite (https://svn.opengeospatial.org/ogc-projects/cite/maven) -> [Help 1]
+
+If just a single Docker image is required (e.g. TEAM Engine with all available executable test suites or TEAM Engine with ETS for WMS 1.3), navigate to the corresponding module and execute the built there. For example, following this examples, for WMS 1.3 do the following:
+
+    % cd teamengine-ets-wms13
+    % mvn clean package docker:build
 
 ## Running TEAM Engine inside a Docker container
 
 The following Docker command starts the TEAM Engine with all available executable test suites inside a Docker container with the context name ```teamengine``` on port 8081 with the previously built Docker image named ```opengis/teamengine-ets-all```:
 
     % docker run -p 8081:8080 --name teamengine --rm opengis/teamengine-ets-all
-
+    
 To start TEAM Engine with a single executable test suite, just adjust the second part of the image name to the name of the required module.
 Example for starting the TEAM Engine with ETS for WMS 1.3 (name of Docker image is ```opengis/teamengine-ets-wms13```):
 
