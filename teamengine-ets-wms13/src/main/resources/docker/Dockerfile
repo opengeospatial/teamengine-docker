@@ -21,6 +21,8 @@ ENV JAVA_OPTS="-Xms1024m -Xmx2048m -DTE_BASE=/root/te_base"
 # add ETS for WMS 1.3
 ADD ets-wms13-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wms13-*-ctl.zip -d /root/te_base/scripts
+ADD ets-wms13-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-wms13-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # run tomcat
 CMD ["catalina.sh", "run"]

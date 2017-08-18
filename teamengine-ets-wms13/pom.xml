@@ -38,6 +38,13 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wms13</artifactId>
+      <version>${ets-wms13.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>
