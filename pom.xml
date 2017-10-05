@@ -43,6 +43,7 @@
     <ets-wps10.version>0.6</ets-wps10.version>
     <teamengine.version>4.10</teamengine.version>
     <ets-wfs20-nsg.version>0.1-SNAPSHOT</ets-wfs20-nsg.version>
+    <ets-wmts10-nsg.version>0.1-SNAPSHOT</ets-wmts10-nsg.version>
   </properties>
 
   <organization>
@@ -178,6 +179,7 @@
     <module>teamengine-ets-wms-client13</module>
     <module>teamengine-ets-wps10</module>
     <module>teamengine-ets-wfs20-nsg</module>
+    <module>teamengine-ets-wmts10-nsg</module>
   </modules>
 
 </project>

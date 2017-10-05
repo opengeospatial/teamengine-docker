@@ -66,9 +66,15 @@ RUN cd /root/ && unzip -q ets-wms13-*-ctl.zip -d /root/te_base/scripts
 ADD ets-wms13-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-wms13-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
+# add ETS for NSG WMTS 1.0
+ADD ets-wmts10-nsg-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-wmts10-nsg-*-ctl.zip -d /root/te_base/scripts
+ADD ets-wmts10-nsg-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-wmts10-nsg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
 # add ETS for WMTS 1.0
 ADD ets-wmts10-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-wmts10-*-ctl.zip -d /root/te_base/scripts
+RUN cd /root/ && unzip -q ets-wmts10-[!n]*-ctl.zip -d /root/te_base/scripts
 
 # add ETS for CSW 2.0.2
 ADD ets-csw20-*-ctl.zip /root/

@@ -374,6 +374,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS NSG WMTS 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wmts10-nsg</artifactId>
+      <version>${ets-wmts10-nsg.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wmts10-nsg</artifactId>
+      <version>${ets-wmts10-nsg.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>
