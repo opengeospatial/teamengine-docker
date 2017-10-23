@@ -41,7 +41,7 @@
     <ets-sta10.version>1.0</ets-sta10.version>
     <ets-wms-client13.version>1.2</ets-wms-client13.version>
     <ets-wps10.version>0.6</ets-wps10.version>
-    <ets-wfs20-nsg.version>0.1-SNAPSHOT</ets-wfs20-nsg.version>
+    <ets-wfs20-nsg.version>0.2-SNAPSHOT</ets-wfs20-nsg.version>
     <ets-wmts10-nsg.version>0.1-SNAPSHOT</ets-wmts10-nsg.version>
     <teamengine.version>5.0</teamengine.version>
   </properties>
