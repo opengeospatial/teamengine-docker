@@ -41,6 +41,8 @@
     <ets-sta10.version>1.0</ets-sta10.version>
     <ets-wms-client13.version>1.2</ets-wms-client13.version>
     <ets-wps10.version>0.6</ets-wps10.version>
+    <ets-wfs20-dgiwg.version>0.3-SNAPSHOT</ets-wfs20-dgiwg.version>
+    <ets-wms13-dgiwg.version>0.4-SNAPSHOT</ets-wms13-dgiwg.version>
     <teamengine.version>4.10</teamengine.version>
   </properties>
 
@@ -176,6 +178,8 @@
     <module>teamengine-ets-sta10</module>
     <module>teamengine-ets-wms-client13</module>
     <module>teamengine-ets-wps10</module>
+    <module>teamengine-ets-wfs20-dgiwg</module>
+    <module>teamengine-ets-wms13-dgiwg</module>
   </modules>
 
 </project>
