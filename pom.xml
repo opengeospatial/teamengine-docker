@@ -43,7 +43,7 @@
     <ets-wps10.version>0.6</ets-wps10.version>
     <ets-wfs20-dgiwg.version>0.3-SNAPSHOT</ets-wfs20-dgiwg.version>
     <ets-wms13-dgiwg.version>0.4-SNAPSHOT</ets-wms13-dgiwg.version>
-    <teamengine.version>4.10</teamengine.version>
+    <teamengine.version>5.1</teamengine.version>
   </properties>
 
   <organization>
