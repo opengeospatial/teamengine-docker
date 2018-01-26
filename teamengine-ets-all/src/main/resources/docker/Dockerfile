@@ -172,5 +172,11 @@ RUN cd /root/ && unzip -q -o ets-wms-client13-*-deps.zip -d /usr/local/tomcat/we
 ADD ets-wps10-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wps10-*-ctl.zip -d /root/te_base/scripts
 
+# add ETS for NSG GeoPackage 1.2 Profile
+ADD ets-gpkg12-nsg-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-gpkg12-nsg-*-ctl.zip -d /root/te_base/scripts
+ADD ets-gpkg12-nsg-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-gpkg12-nsg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
 # run tomcat
 CMD ["catalina.sh", "run"]

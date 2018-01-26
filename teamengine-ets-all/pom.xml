@@ -389,6 +389,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS NSG GeoPackage 1.2 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-gpkg12-nsg</artifactId>
+      <version>${ets-gpkg12-nsg.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-gpkg12-nsg</artifactId>
+      <version>${ets-gpkg12-nsg.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>
