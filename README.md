@@ -37,6 +37,7 @@ Currently, following modules are available. They differ in the available executa
 | teamengine-ets-wms-client13 | Includes TEAM Engine and the executable test suite for WMS Client 1.3. |
 | teamengine-ets-wmts10 | Includes TEAM Engine and the executable test suite for WMTS 1.0. |
 | teamengine-ets-wps10 | Includes TEAM Engine and the executable test suite for WPS 1.0. |
+| teamengine-ets-gpkg12-nsg | Includes TEAM Engine and the executable test suite for NSG GeoPackage 1.2. |
 
 ## Introduction
 
@@ -76,11 +77,11 @@ Just update the versions set in the properties in the pom.xml.
 
 #### Build TEAM Engine:
 
-Per default version 4.10 is used.
+Default version is 5.1.
 
     % git clone https://github.com/opengeospatial/teamengine.git
     % cd teamengine
-    % git checkout tags/4.10
+    % git checkout tags/5.1
     % mvn clean install
     
 Running the previous commands will make available the TEAM Engine project in the local mvn repository.    
