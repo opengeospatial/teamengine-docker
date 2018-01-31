@@ -43,7 +43,7 @@
     <ets-wps10.version>0.6</ets-wps10.version>
     <ets-wfs20-nsg.version>0.3-SNAPSHOT</ets-wfs20-nsg.version>
     <ets-wmts10-nsg.version>0.2-SNAPSHOT</ets-wmts10-nsg.version>
-    <ets-gpkg12-nsg.version>0.1-SNAPSHOT</ets-gpkg12-nsg.version>
+    <ets-gpkg12-nsg.version>0.2-SNAPSHOT</ets-gpkg12-nsg.version>
     <teamengine.version>5.1</teamengine.version>
   </properties>
 
