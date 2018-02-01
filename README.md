@@ -76,11 +76,11 @@ Just update the versions set in the properties in the pom.xml.
 
 #### Build TEAM Engine:
 
-Per default version 4.10 is used.
+Default version is 5.1.
 
     % git clone https://github.com/opengeospatial/teamengine.git
     % cd teamengine
-    % git checkout tags/4.10
+    % git checkout tags/5.1
     % mvn clean install
     
 Running the previous commands will make available the TEAM Engine project in the local mvn repository.    
@@ -113,7 +113,7 @@ This will build a new Docker image from scratch. It may take a while the first t
 
 If the command is executed in the root directory of this project, all modules are built.
 
-If only some of the tests were build (using the steps from WMS 1.3 as described bellow) an error might occur because mavn modules for some tests might be missing. An error like the follwoing will be presented::
+If only some of the tests were build (using the steps from WMS 1.3 as described bellow) an error might occur because Maven artefacts for some tests might be missing. An error like the follwoing will be presented::
 
     [ERROR] Failed to execute goal on project teamengine-ets-all: Could not resolve dependencies for project org.opengis.cite:teamengine-ets-all:pom:1.0-SNAPSHOT: The following artifacts could not be resolved: org.opengis.cite:ets-kml2:zip:ctl:0.5, org.opengis.cite:ets-kml2:zip:deps:0.5, org.opengis.cite:ets-owc10:zip:ctl:0.1, org.opengis.cite:ets-owc10:zip:deps:0.1: Could not find artifact org.opengis.cite:ets-kml2:zip:ctl:0.5 in opengeospatial-cite (https://svn.opengeospatial.org/ogc-projects/cite/maven) -> [Help 1]
 

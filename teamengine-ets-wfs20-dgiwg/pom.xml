@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>teamengine-ets-wcs10</artifactId>
+  <artifactId>teamengine-ets-wfs20-dgiwg</artifactId>
   <packaging>pom</packaging>
-  <name>TEAM Engine - Docker - ETS WCS 1.0</name>
+  <name>TEAM Engine - Docker - ETS WFS 2.0 DGIWG</name>
   <description>
     Execution of TEAM Engine with Docker is enabled. This module enables the automatic creation of virtualization images
-    for running TEAM engine with ETS WCS 1.0 on Docker.
+    for running TEAM engine with ETS DGIWG WFS 2.0 on Docker.
   </description>
 
   <parent>
@@ -30,18 +30,17 @@
   </build>
 
   <dependencies>
-    <!-- ETS WCS 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-wcs10</artifactId>
-      <version>${ets-wcs10.version}</version>
+      <artifactId>ets-wfs20-dgiwg</artifactId>
+      <version>${ets-wfs20-dgiwg.version}</version>
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
     <dependency>
       <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-wcs10</artifactId>
-      <version>${ets-wcs10.version}</version>
+      <artifactId>ets-wfs20-dgiwg</artifactId>
+      <version>${ets-wfs20-dgiwg.version}</version>
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
