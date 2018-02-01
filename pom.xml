@@ -43,6 +43,9 @@
     <ets-wps10.version>0.6</ets-wps10.version>
     <ets-wfs20-dgiwg.version>0.4</ets-wfs20-dgiwg.version>
     <ets-wms13-dgiwg.version>0.4</ets-wms13-dgiwg.version>
+    <ets-wfs20-nsg.version>0.3</ets-wfs20-nsg.version>
+    <ets-wmts10-nsg.version>0.2</ets-wmts10-nsg.version>
+    <ets-gpkg12-nsg.version>0.1</ets-gpkg12-nsg.version>
     <teamengine.version>5.1</teamengine.version>
   </properties>
 
@@ -106,7 +109,7 @@
       <plugin>
         <groupId>com.spotify</groupId>
         <artifactId>docker-maven-plugin</artifactId>
-        <version>0.4.13</version>
+        <version>1.0.0</version>
         <configuration>
           <skipDocker>true</skipDocker>
           <dockerDirectory>${project.basedir}/src/main/resources/docker</dockerDirectory>
@@ -180,6 +183,9 @@
     <module>teamengine-ets-wps10</module>
     <module>teamengine-ets-wfs20-dgiwg</module>
     <module>teamengine-ets-wms13-dgiwg</module>
+    <module>teamengine-ets-wfs20-nsg</module>
+    <module>teamengine-ets-wmts10-nsg</module>
+    <module>teamengine-ets-gpkg12-nsg</module>
   </modules>
 
 </project>
