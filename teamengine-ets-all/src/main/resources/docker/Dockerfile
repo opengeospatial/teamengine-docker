@@ -33,6 +33,8 @@ RUN cd /root/ && unzip -q -o ets-wfs20-dgiwg-*-deps.zip -d /usr/local/tomcat/web
 # add ETS for WCS 1.0
 ADD ets-wcs10-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wcs10-*-ctl.zip -d /root/te_base/scripts
+ADD ets-wcs10-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-wcs10-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for WCS 1.1
 ADD ets-wcs11-*-ctl.zip /root/

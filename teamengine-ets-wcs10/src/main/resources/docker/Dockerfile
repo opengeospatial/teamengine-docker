@@ -21,6 +21,8 @@ ENV JAVA_OPTS="-Xms1024m -Xmx2048m -DTE_BASE=/root/te_base"
 # add ETS for WCS 1.0
 ADD ets-wcs10-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wcs10-*-ctl.zip -d /root/te_base/scripts
+ADD ets-wcs10-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-wcs10-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # run tomcat
 CMD ["catalina.sh", "run"]
