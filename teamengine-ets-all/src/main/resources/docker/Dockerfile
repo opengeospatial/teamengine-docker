@@ -183,7 +183,7 @@ RUN cd /root/ && unzip -q -o ets-wfs20-nsg-*-deps.zip -d /usr/local/tomcat/webap
 # add ETS for NSG WMTS 1.0
 #ADD ets-wmts10-nsg-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wmts10-nsg-*-ctl.zip -d /root/te_base/scripts
-#ADD ets-wmts10-nsg-*-deps.zip /root/
+ADD ets-wmts10-nsg-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-wmts10-nsg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for NSG GeoPackage 1.2 Profile
