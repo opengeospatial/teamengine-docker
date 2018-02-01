@@ -366,6 +366,36 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS DGIWG WFS 2.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wfs20-dgiwg</artifactId>
+      <version>${ets-wfs20-dgiwg.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wfs20-dgiwg</artifactId>
+      <version>${ets-wfs20-dgiwg.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS DGIWG WMS 1.3 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wms13-dgiwg</artifactId>
+      <version>${ets-wms13-dgiwg.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wms13-dgiwg</artifactId>
+      <version>${ets-wms13-dgiwg.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>
