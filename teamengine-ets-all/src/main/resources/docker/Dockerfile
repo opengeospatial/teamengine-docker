@@ -19,15 +19,15 @@ RUN cd /root/ && unzip -q teamengine-console-*-base.zip -d /root/te_base
 ENV JAVA_OPTS="-Xms1024m -Xmx2048m -DTE_BASE=/root/te_base"
 
 # add ETS for DGIWG WMS 1.3
-ADD ets-wms13-dgiwg-*-ctl.zip /root/
+#ADD ets-wms13-dgiwg-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wms13-dgiwg-*-ctl.zip -d /root/te_base/scripts
-ADD ets-wms13-dgiwg-*-deps.zip /root/
+#ADD ets-wms13-dgiwg-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-wms13-dgiwg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for DGIWG WFS 2.0
-ADD ets-wfs20-dgiwg*-ctl.zip /root/
+#ADD ets-wfs20-dgiwg*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wfs20-dgiwg-*-ctl.zip -d /root/te_base/scripts
-ADD ets-wfs20-dgiwg-*-deps.zip /root/
+#ADD ets-wfs20-dgiwg-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-wfs20-dgiwg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for WCS 1.0
@@ -45,9 +45,9 @@ ADD ets-wcs20-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wcs20-*-ctl.zip -d /root/te_base/scripts
 
 # add ETS for NSG WFS 2.0 Profile
-ADD ets-wfs20-nsg-*-ctl.zip /root/
+#ADD ets-wfs20-nsg-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wfs20-nsg-*-ctl.zip -d /root/te_base/scripts
-ADD ets-wfs20-nsg-*-deps.zip /root/
+#ADD ets-wfs20-nsg-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-wfs20-nsg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for WFS 1.0
@@ -64,9 +64,9 @@ RUN cd /root/ && unzip -q -o ets-wfs11-*-deps.zip -d /usr/local/tomcat/webapps/t
 
 # add ETS for WFS 2.0
 ADD ets-wfs20-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-wfs20-[!d][!n]*-ctl.zip -d /root/te_base/scripts
+RUN cd /root/ && unzip -q ets-wfs20-[^dn]*-ctl.zip -d /root/te_base/scripts
 ADD ets-wfs20-*-deps.zip /root/
-RUN cd /root/ && unzip -q -o ets-wfs20-[!d][!n]*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+RUN cd /root/ && unzip -q -o ets-wfs20-[^dn]*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for WMS 1.1
 ADD ets-wms11-*-ctl.zip /root/
@@ -76,19 +76,19 @@ RUN cd /root/ && unzip -q -o ets-wms11-*-deps.zip -d /usr/local/tomcat/webapps/t
 
 # add ETS for WMS 1.3
 ADD ets-wms13-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-wms13-[!d]*-ctl.zip -d /root/te_base/scripts
+RUN cd /root/ && unzip -q ets-wms13-[^d]*-ctl.zip -d /root/te_base/scripts
 ADD ets-wms13-*-deps.zip /root/
-RUN cd /root/ && unzip -q -o ets-wms13-[!d]*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+RUN cd /root/ && unzip -q -o ets-wms13-[^d]*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for NSG WMTS 1.0
-ADD ets-wmts10-nsg-*-ctl.zip /root/
+#ADD ets-wmts10-nsg-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wmts10-nsg-*-ctl.zip -d /root/te_base/scripts
-ADD ets-wmts10-nsg-*-deps.zip /root/
+#ADD ets-wmts10-nsg-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-wmts10-nsg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for WMTS 1.0
 ADD ets-wmts10-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-wmts10-[!n]*-ctl.zip -d /root/te_base/scripts
+RUN cd /root/ && unzip -q ets-wmts10-[^n]*-ctl.zip -d /root/te_base/scripts
 
 # add ETS for CSW 2.0.2
 ADD ets-csw20-*-ctl.zip /root/
@@ -107,9 +107,9 @@ ADD ets-gml32-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-gml32-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for NSG GeoPackage 1.2 Profile
-ADD ets-gpkg12-nsg-*-ctl.zip /root/
+#ADD ets-gpkg12-nsg-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-gpkg12-nsg-*-ctl.zip -d /root/te_base/scripts
-ADD ets-gpkg12-nsg-*-deps.zip /root/
+#ADD ets-gpkg12-nsg-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-gpkg12-nsg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for GeoPackage 1.0
@@ -120,9 +120,9 @@ RUN cd /root/ && unzip -q -o ets-gpkg10-*-deps.zip -d /usr/local/tomcat/webapps/
 
 # add ETS for GeoPackage 1.2
 ADD ets-gpkg12-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-gpkg12-[!n]*-ctl.zip -d /root/te_base/scripts
+RUN cd /root/ && unzip -q ets-gpkg12-[^n]*-ctl.zip -d /root/te_base/scripts
 ADD ets-gpkg12-*-deps.zip /root/
-RUN cd /root/ && unzip -q -o ets-gpkg12-[!n]*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+RUN cd /root/ && unzip -q -o ets-gpkg12-[^n]*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for KML 2.2
 ADD ets-kml22-*-ctl.zip /root/
