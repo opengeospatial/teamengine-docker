@@ -49,9 +49,9 @@ ADD ets-wfs11-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-wfs11-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for WFS 2.0
-ADD ets-wfs20-*-ctl.zip /root/
+ADD ets-wfs20-nsg-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wfs20-[!n]*-ctl.zip -d /root/te_base/scripts
-ADD ets-wfs20-*-deps.zip /root/
+ADD ets-wfs20-nsg-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-wfs20-[!n]*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for WMS 1.1
@@ -92,6 +92,12 @@ RUN cd /root/ && unzip -q ets-gml32-*-ctl.zip -d /root/te_base/scripts
 ADD ets-gml32-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-gml32-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
+# add ETS for NSG GeoPackage 1.2 Profile
+ADD ets-gpkg12-nsg-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-gpkg12-nsg-*-ctl.zip -d /root/te_base/scripts
+ADD ets-gpkg12-nsg-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-gpkg12-nsg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
 # add ETS for GeoPackage 1.0
 ADD ets-gpkg10-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-gpkg10-*-ctl.zip -d /root/te_base/scripts
@@ -100,9 +106,9 @@ RUN cd /root/ && unzip -q -o ets-gpkg10-*-deps.zip -d /usr/local/tomcat/webapps/
 
 # add ETS for GeoPackage 1.2
 ADD ets-gpkg12-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-gpkg12-*-ctl.zip -d /root/te_base/scripts
+RUN cd /root/ && unzip -q ets-gpkg12-[!n]*-ctl.zip -d /root/te_base/scripts
 ADD ets-gpkg12-*-deps.zip /root/
-RUN cd /root/ && unzip -q -o ets-gpkg12-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+RUN cd /root/ && unzip -q -o ets-gpkg12-[!n]*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for KML 2.2
 ADD ets-kml22-*-ctl.zip /root/
@@ -171,12 +177,6 @@ RUN cd /root/ && unzip -q -o ets-wms-client13-*-deps.zip -d /usr/local/tomcat/we
 # add ETS for WPS 1.0
 ADD ets-wps10-*-ctl.zip /root/
 RUN cd /root/ && unzip -q ets-wps10-*-ctl.zip -d /root/te_base/scripts
-
-# add ETS for NSG GeoPackage 1.2 Profile
-ADD ets-gpkg12-nsg-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-gpkg12-nsg-*-ctl.zip -d /root/te_base/scripts
-ADD ets-gpkg12-nsg-*-deps.zip /root/
-RUN cd /root/ && unzip -q -o ets-gpkg12-nsg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # run tomcat
 CMD ["catalina.sh", "run"]
