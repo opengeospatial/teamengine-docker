@@ -58,9 +58,9 @@ RUN cd /root/ && unzip -q -o ets-wms11-*-deps.zip -d /usr/local/tomcat/webapps/t
 
 # add ETS for WMS 1.3
 ADD ets-wms13-*-ctl.zip /root/
-RUN cd /root/ && unzip -q ets-wms13-[^d]*-ctl.zip -d /root/te_base/scripts
+RUN cd /root/ && unzip -q ets-wms13-[^dn]*-ctl.zip -d /root/te_base/scripts
 ADD ets-wms13-*-deps.zip /root/
-RUN cd /root/ && unzip -q -o ets-wms13-[^d]*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+RUN cd /root/ && unzip -q -o ets-wms13-[^dn]*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # add ETS for WMTS 1.0
 ADD ets-wmts10-*-ctl.zip /root/
@@ -191,6 +191,12 @@ RUN cd /root/ && unzip -q -o ets-wmts10-nsg-*-deps.zip -d /usr/local/tomcat/weba
 RUN cd /root/ && unzip -q ets-gpkg12-nsg-*-ctl.zip -d /root/te_base/scripts
 #ADD ets-gpkg12-nsg-*-deps.zip /root/
 RUN cd /root/ && unzip -q -o ets-gpkg12-nsg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
+
+# add ETS for NSG WMS 1.3
+#ADD ets-wms13-nsg-*-ctl.zip /root/
+RUN cd /root/ && unzip -q ets-wms13-nsg-*-ctl.zip -d /root/te_base/scripts
+#ADD ets-wms13-nsg-*-deps.zip /root/
+RUN cd /root/ && unzip -q -o ets-wms13-nsg-*-deps.zip -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib
 
 # run tomcat
 CMD ["catalina.sh", "run"]
