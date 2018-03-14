@@ -47,6 +47,7 @@
     <ets-wfs20-nsg.version>0.3</ets-wfs20-nsg.version>
     <ets-wmts10-nsg.version>0.2</ets-wmts10-nsg.version>
     <ets-gpkg12-nsg.version>0.1</ets-gpkg12-nsg.version>
+    <ets-swecommon20.version>0.2</ets-swecommon20.version>
     <teamengine.version>5.2</teamengine.version>
   </properties>
 
@@ -188,6 +189,7 @@
     <module>teamengine-ets-wmts10-nsg</module>
     <module>teamengine-ets-gpkg12-nsg</module>
     <module>teamengine-ets-wms13-nsg</module>
+    <module>teamengine-ets-swecommon20</module>
   </modules>
 
 </project>
