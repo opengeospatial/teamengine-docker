@@ -4,39 +4,12 @@ This project provides Dockerfiles for building Docker images with OGC TEAM Engin
 
 ## Modules
 
-Currently, following modules are available. They differ in the available executable test suite(s).
+Currently, following modules are available.
 
 | Module name | Description |
 | --- | --- |
-| teamengine-ets-all | Includes TEAM Engine and all executable test suites listed below. |
-| teamengine-ets-cat30 | Includes TEAM Engine and the executable test suite for CAT 3.0. |
-| teamengine-ets-csw202 | Includes TEAM Engine and the executable test suite for CSW 2.0.2. |
-| teamengine-ets-gml32 | Includes TEAM Engine and the executable test suite for GML 3.2. |
-| teamengine-ets-gpkg10 | Includes TEAM Engine and the executable test suite for GeoPackage 1.0. |
-| teamengine-ets-gpkg12 | Includes TEAM Engine and the executable test suite for GeoPackage 1.2. |
-| teamengine-ets-kml2 | Includes TEAM Engine and the executable test suite for KML 2. |
-| teamengine-ets-kml22 | Includes TEAM Engine and the executable test suite for KML 2.2. |
-| teamengine-ets-owc10 | Includes TEAM Engine and the executable test suite for OWC 1.0. |
-| teamengine-ets-sensorml10 | Includes TEAM Engine and the executable test suite for Sensor Model Language 1.0. |
-| teamengine-ets-sensorml20 | Includes TEAM Engine and the executable test suite for Sensor Model Language 2.0. |
-| teamengine-ets-sfs11 | Includes TEAM Engine and the executable test suite for SFS 1.1. |
-| teamengine-ets-sfs12 | Includes TEAM Engine and the executable test suite for SFS 1.2. |
-| teamengine-ets-sos10 | Includes TEAM Engine and the executable test suite for SOS 1.0. |
-| teamengine-ets-sos20 | Includes TEAM Engine and the executable test suite for SOS 2.0. |
-| teamengine-ets-sps10 | Includes TEAM Engine and the executable test suite for SPS 1.0. |
-| teamengine-ets-sps20 | Includes TEAM Engine and the executable test suite for SPS 2.0. |
-| teamengine-ets-sta10 | Includes TEAM Engine and the executable test suite for STA 1.0. |
-| teamengine-ets-wcs10 | Includes TEAM Engine and the executable test suite for WCS 1.0. |
-| teamengine-ets-wcs11 | Includes TEAM Engine and the executable test suite for WCS 1.1. |
-| teamengine-ets-wcs20 | Includes TEAM Engine and the executable test suite for WCS 2.0. |
-| teamengine-ets-wfs10 | Includes TEAM Engine and the executable test suite for WFS 1.0. |
-| teamengine-ets-wfs11 | Includes TEAM Engine and the executable test suite for WFS 1.0. |
-| teamengine-ets-wfs20 | Includes TEAM Engine and the executable test suite for WFS 2.0. |
-| teamengine-ets-wms11 | Includes TEAM Engine and the executable test suite for WMS 1.1. |
-| teamengine-ets-wms13 | Includes TEAM Engine and the executable test suite for WMS 1.3. |
-| teamengine-ets-wms-client13 | Includes TEAM Engine and the executable test suite for WMS Client 1.3. |
-| teamengine-ets-wmts10 | Includes TEAM Engine and the executable test suite for WMTS 1.0. |
-| teamengine-ets-wps10 | Includes TEAM Engine and the executable test suite for WPS 1.0. |
+| teamengine-ets-all | Includes TEAM Engine and all executable test suites which are included in this project. |
+| teamengine-[TEST_SUITE_ID] | Includes TEAM Engine and executable test suite [TEST_SUITE_ID]. |
 
 ## Introduction
 
