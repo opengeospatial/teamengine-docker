@@ -46,7 +46,7 @@
     <ets-wms13-nsg.version>0.1-SNAPSHOT</ets-wms13-nsg.version>
     <ets-wfs20-nsg.version>0.3</ets-wfs20-nsg.version>
     <ets-wmts10-nsg.version>0.2</ets-wmts10-nsg.version>
-    <ets-gpkg12-nsg.version>0.1</ets-gpkg12-nsg.version>
+    <ets-gpkg12-nsg.version>0.3</ets-gpkg12-nsg.version>
     <teamengine.version>5.3</teamengine.version>
   </properties>
 
