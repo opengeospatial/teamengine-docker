@@ -44,7 +44,7 @@
     <ets-wps10.version>0.6</ets-wps10.version>
     <ets-wfs20-dgiwg.version>0.4</ets-wfs20-dgiwg.version>
     <ets-wms13-dgiwg.version>0.4</ets-wms13-dgiwg.version>
-    <ets-wms13-nsg.version>0.1-SNAPSHOT</ets-wms13-nsg.version>
+    <ets-wms13-nsg.version>0.1</ets-wms13-nsg.version>
     <ets-wfs20-nsg.version>0.3</ets-wfs20-nsg.version>
     <ets-wmts10-nsg.version>0.2</ets-wmts10-nsg.version>
     <ets-gpkg12-nsg.version>0.3</ets-gpkg12-nsg.version>
