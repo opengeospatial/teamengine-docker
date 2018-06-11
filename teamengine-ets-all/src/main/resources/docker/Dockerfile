@@ -22,7 +22,7 @@ ADD ets-*-ctl.zip /root/
 RUN cd /root/ && for file in ets-*-ctl.zip; do unzip -q $file -d /root/te_base/scripts; done
 
 ADD ets-*-deps.zip /root/
-RUN cd /root/ && for file in ets-*-ctl.zip; do unzip -q -o $file -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib; done
+RUN cd /root/ && for file in ets-*-deps.zip; do unzip -q -o $file -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib; done
 
 # run tomcat
 CMD ["catalina.sh", "run"]
