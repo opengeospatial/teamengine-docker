@@ -155,43 +155,8 @@
   </dependencies>
 
   <modules>
-    <module>teamengine-ets-all</module>
-    <module>teamengine-ets-wcs10</module>
-    <module>teamengine-ets-wcs11</module>
-    <module>teamengine-ets-wcs20</module>
-    <module>teamengine-ets-wfs10</module>
-    <module>teamengine-ets-wfs11</module>
-    <module>teamengine-ets-wfs20</module>
-    <module>teamengine-ets-wfs30</module>
-    <module>teamengine-ets-wms11</module>
-    <module>teamengine-ets-wms13</module>
-    <module>teamengine-ets-wmts10</module>
-    <module>teamengine-ets-csw202</module>
-    <module>teamengine-ets-cat30</module>
-    <module>teamengine-ets-gml32</module>
-    <module>teamengine-ets-gpkg10</module>
-    <module>teamengine-ets-gpkg12</module>
-    <module>teamengine-ets-kml22</module>
-    <module>teamengine-ets-kml2</module>
-    <module>teamengine-ets-owc10</module>
-    <module>teamengine-ets-sensorml10</module>
-    <module>teamengine-ets-sensorml20</module>
-    <module>teamengine-ets-sfs11</module>
-    <module>teamengine-ets-sfs12</module>
-    <module>teamengine-ets-sos10</module>
-    <module>teamengine-ets-sos20</module>
-    <module>teamengine-ets-sps10</module>
-    <module>teamengine-ets-sps20</module>
-    <module>teamengine-ets-sta10</module>
-    <module>teamengine-ets-wms-client13</module>
-    <module>teamengine-ets-wps10</module>
-    <module>teamengine-ets-wfs20-dgiwg</module>
-    <module>teamengine-ets-wms13-dgiwg</module>
-    <module>teamengine-ets-wfs20-nsg</module>
-    <module>teamengine-ets-wmts10-nsg</module>
-    <module>teamengine-ets-gpkg12-nsg</module>
-    <module>teamengine-ets-wms13-nsg</module>
-    <module>teamengine-ets-cat20-dgiwg10</module>
+    <module>teamengine-docker-production</module>
+    <module>teamengine-docker-beta</module>
   </modules>
 
 </project>
