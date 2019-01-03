@@ -155,8 +155,7 @@
   </dependencies>
 
   <modules>
-    <module>teamengine-docker-production</module>
-    <module>teamengine-docker-beta</module>
+    <module>teamengine-production</module>
+    <module>teamengine-beta</module>
   </modules>
-
 </project>
