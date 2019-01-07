@@ -48,6 +48,9 @@
     <ets-wmts10-nsg.version>0.3</ets-wmts10-nsg.version>
     <ets-gpkg12-nsg.version>0.3</ets-gpkg12-nsg.version>
     <ets-cat20-dgiwg10.version>0.1-SNAPSHOT</ets-cat20-dgiwg10.version>
+    <ets-owc10.version>0.1</ets-owc10.version>
+    <ets-om20.version>1.1</ets-om20.version>
+    <ets-ets-swecommon20.version>0.3</ets-ets-swecommon20.version>
   </properties>
 
   <build>
@@ -512,4 +515,49 @@
       <type>zip</type>
     </dependency>
   </dependencies>
+  <!-- ETS ets-owc10 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-owc10</artifactId>
+      <version>${ets-owc10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-owc10</artifactId>
+      <version>${ets-owc10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>		
+	<!-- ETS ets-om20 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-om20</artifactId>
+      <version>${ets-om20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-om20</artifactId>
+      <version>${ets-om20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+	<!-- ETS ets-swecommon20 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-swecommon20</artifactId>
+      <version>${ets-swecommon20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-swecommon20</artifactId>
+      <version>${ets-swecommon20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
 </project>
