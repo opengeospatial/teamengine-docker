@@ -513,7 +513,6 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
-  </dependencies>
     <!-- ETS ets-om20 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -544,4 +543,5 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+  </dependencies>
 </project>
