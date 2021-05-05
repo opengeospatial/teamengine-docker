@@ -11,43 +11,49 @@
   </parent>
 
   <properties>
-    <teamengine.version>5.3</teamengine.version>
-    <ets-wcs10.version>1.15</ets-wcs10.version>
-    <ets-wcs11.version>1.12</ets-wcs11.version>
-    <ets-wcs20.version>1.14</ets-wcs20.version>
+    <teamengine.version>5.4.1</teamengine.version>
+    <ets-wcs10.version>1.16</ets-wcs10.version>
+    <ets-wcs11.version>1.15</ets-wcs11.version>
+    <ets-wcs20.version>1.16</ets-wcs20.version>
     <ets-wfs10.version>1.12</ets-wfs10.version>
     <ets-wfs11.version>1.32</ets-wfs11.version>
-    <ets-wfs20.version>1.30</ets-wfs20.version>
-    <ets-wfs30.version>0.2</ets-wfs30.version>
-    <ets-wms11.version>1.18</ets-wms11.version>
-    <ets-wms13.version>1.24</ets-wms13.version>
-    <ets-wmts10.version>1.2</ets-wmts10.version>
+    <ets-wfs20.version>1.36</ets-wfs20.version>
+    <ets-wms11.version>1.20</ets-wms11.version>
+    <ets-wms13.version>1.25</ets-wms13.version>
+    <ets-wmts10.version>1.3</ets-wmts10.version>
     <ets-csw202.version>1.18</ets-csw202.version>
-    <ets-cat30.version>1.2</ets-cat30.version>
-    <ets-gml32.version>1.26</ets-gml32.version>
+    <ets-cat30.version>1.3</ets-cat30.version>
+    <ets-gmljpx20.version>1.1</ets-gmljpx20.version>
+    <ets-gml32.version>1.29</ets-gml32.version>
     <ets-gpkg10.version>1.1</ets-gpkg10.version>
-    <ets-gpkg12.version>1.0</ets-gpkg12.version>
+    <ets-gpkg12.version>1.1</ets-gpkg12.version>
+    <ets-ets-geotiff11.version>0.2</ets-ets-geotiff11.version>
+    <ets-ogcapi-features10.version>1.1</ets-ogcapi-features10.version>
+    <ets-cdb10.version>0.6</ets-cdb10.version>
     <ets-kml22.version>1.13</ets-kml22.version>
     <ets-kml2.version>0.5</ets-kml2.version>
+    <ets-security-client10.version>0.6</ets-security-client10.version>
     <ets-owc10.version>0.1</ets-owc10.version>
-    <ets-sensorml10.version>0.9</ets-sensorml10.version>
-    <ets-sensorml20.version>0.8</ets-sensorml20.version>
-    <ets-sfs11.version>1.6</ets-sfs11.version>
+    <ets-omxml20.version>1.0</ets-omxml20.version>
+    <ets-swecommon20.version>0.10</ets-swecommon20.version>
+    <ets-sensorml10.version>1.0.1</ets-sensorml10.version>
+    <ets-sensorml20.version>0.10</ets-sensorml20.version>
+    <ets-sfs11.version>1.7</ets-sfs11.version>
     <ets-sfs12.version>1.4</ets-sfs12.version>
     <ets-sos10.version>1.14</ets-sos10.version>
-    <ets-sos20.version>1.13</ets-sos20.version>
-    <ets-sps10.version>1.7</ets-sps10.version>
+    <ets-sos20.version>1.14</ets-sos20.version>
+    <ets-sps10.version>1.8</ets-sps10.version>
     <ets-sps20.version>1.11</ets-sps20.version>
     <ets-sta10.version>1.2</ets-sta10.version>
-    <ets-wms-client13.version>1.3</ets-wms-client13.version>
+    <ets-wms-client13.version>1.4</ets-wms-client13.version>
     <ets-wps10.version>0.6</ets-wps10.version>
     <ets-wfs20-dgiwg.version>0.4</ets-wfs20-dgiwg.version>
     <ets-wms13-dgiwg.version>0.4</ets-wms13-dgiwg.version>
     <ets-wms13-nsg.version>0.2</ets-wms13-nsg.version>
     <ets-wfs20-nsg.version>0.3</ets-wfs20-nsg.version>
     <ets-wmts10-nsg.version>0.3</ets-wmts10-nsg.version>
-    <ets-gpkg12-nsg.version>0.5</ets-gpkg12-nsg.version>
-    <ets-cat20-dgiwg10.version>0.1-SNAPSHOT</ets-cat20-dgiwg10.version>
+    <ets-gpkg12-nsg.version>0.6</ets-gpkg12-nsg.version>
+    <ets-cat20-dgiwg10.version>0.3</ets-cat20-dgiwg10.version>
     <ets-om20.version>1.1</ets-om20.version>
     <ets-swecommon20.version>0.3</ets-swecommon20.version>
   </properties>
@@ -224,6 +230,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS gmljpx20 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-gmljpx20</artifactId>
+      <version>${ets-gmljpx20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-gmljpx20</artifactId>
+      <version>${ets-gmljpx20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS GML 3.2 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -269,6 +290,36 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS GeoTiff 1.1 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-geotiff11</artifactId>
+      <version>${ets-geotiff11.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-geotiff11</artifactId>
+      <version>${ets-geotiff11.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS OGC API - Features 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-ogcapi-features10</artifactId>
+      <version>${ets-ogcapi-features10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-ogcapi-features10</artifactId>
+      <version>${ets-ogcapi-features10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS KML 2.2 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -299,6 +350,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS OGC Web Service Security Client 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-security-client10</artifactId>
+      <version>${ets-security-client10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-security-client10</artifactId>
+      <version>${ets-security-client10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS OWC 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -311,6 +377,36 @@
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-owc10</artifactId>
       <version>${ets-owc10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS Observations and Measurements - XML Implementation 2.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-omxml20</artifactId>
+      <version>${ets-omxml20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-omxml20</artifactId>
+      <version>${ets-omxml20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS SWE Common Data Model Encoding Standard 2.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-swecommon20</artifactId>
+      <version>${ets-swecommon20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-swecommon20</artifactId>
+      <version>${ets-swecommon20.version}</version>
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
