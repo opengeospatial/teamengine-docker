@@ -176,6 +176,13 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wms13</artifactId>
+      <version>${ets-wms13.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS WMTS 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -267,7 +274,7 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
-    <!-- ETS ogcapi-features10 1.0 -->
+    <!-- ETS OGC API - Features 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-ogcapi-features10</artifactId>
@@ -282,7 +289,7 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
-    <!-- ETS omxml20 1.0 -->
+    <!-- ETS Observations and Measurements - XML Implementation 2.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-omxml20</artifactId>
@@ -297,7 +304,7 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
-    <!-- ETS swecommon20 1.0 -->
+    <!-- ETS SWE Common Data Model Encoding Standard 2.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-swecommon20</artifactId>
@@ -312,7 +319,7 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
-    <!-- ETS sensorml10 1.0 -->
+    <!-- ETS Sensor Model Language 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-sensorml10</artifactId>
@@ -320,6 +327,7 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+	<!-- sensorml10 does not have any deps
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-sensorml10</artifactId>
@@ -327,6 +335,7 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+	-->
     <!-- ETS KML 2.2 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
