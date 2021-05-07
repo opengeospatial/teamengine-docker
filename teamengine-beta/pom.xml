@@ -27,7 +27,7 @@
     <ets-gml32.version>1.29</ets-gml32.version>
     <ets-gpkg10.version>1.1</ets-gpkg10.version>
     <ets-gpkg12.version>1.1</ets-gpkg12.version>
-    <ets-ets-geotiff11.version>0.2</ets-ets-geotiff11.version>
+    <ets-geotiff11.version>0.2</ets-geotiff11.version>
     <ets-ogcapi-features10.version>1.1</ets-ogcapi-features10.version>
     <ets-cdb10.version>0.6</ets-cdb10.version>
     <ets-kml22.version>1.13</ets-kml22.version>
