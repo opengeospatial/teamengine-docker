@@ -27,11 +27,13 @@
     <ets-gml32.version>1.28</ets-gml32.version>
     <ets-gpkg10.version>1.1</ets-gpkg10.version>
     <ets-gpkg12.version>1.0</ets-gpkg12.version>
+    <ets-geotiff11.version>1.0</ets-geotiff11.version>
     <ets-ogcapi-features10.version>1.0</ets-ogcapi-features10.version>
     <ets-kml22.version>1.13</ets-kml22.version>
     <ets-omxml20.version>1.0</ets-omxml20.version>
     <ets-swecommon20.version>1.0.1</ets-swecommon20.version>
     <ets-sensorml10.version>1.0.1</ets-sensorml10.version>
+    <ets-sensorml20.version>1.0</ets-sensorml20.version>
     <ets-sfs11.version>1.7</ets-sfs11.version>
     <ets-sfs12.version>1.4</ets-sfs12.version>
     <ets-sos10.version>1.14</ets-sos10.version>
@@ -274,6 +276,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
+    <!-- ETS GeoTiff 1.1 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-geotiff11</artifactId>
+      <version>${ets-geotiff11.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-geotiff11</artifactId>
+      <version>${ets-geotiff11.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS OGC API - Features 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -332,6 +349,23 @@
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-sensorml10</artifactId>
       <version>${ets-sensorml10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+	-->
+    <!-- ETS Sensor Model Language 2.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-sensorml20</artifactId>
+      <version>${ets-sensorml20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+	<!-- sensorml20 does not have any deps
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-sensorml20</artifactId>
+      <version>${ets-sensorml20.version}</version>
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
