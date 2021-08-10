@@ -29,6 +29,7 @@
     <ets-gpkg12.version>1.0</ets-gpkg12.version>
     <ets-geotiff11.version>1.0</ets-geotiff11.version>
     <ets-ogcapi-features10.version>1.0</ets-ogcapi-features10.version>
+    <ets-cdb10.version>1.0</ets-cdb10.version>
     <ets-kml22.version>1.13</ets-kml22.version>
     <ets-omxml20.version>1.0</ets-omxml20.version>
     <ets-swecommon20.version>1.0.1</ets-swecommon20.version>
@@ -370,6 +371,21 @@
       <type>zip</type>
     </dependency>
 	-->
+	<!-- ETS OGC CDB 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-cdb10</artifactId>
+      <version>${ets-cdb10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-cdb10</artifactId>
+      <version>${ets-cdb10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+	</dependency>
     <!-- ETS KML 2.2 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
