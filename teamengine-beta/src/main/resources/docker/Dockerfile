@@ -26,7 +26,6 @@ RUN cd /root/ && for file in ets-*-deps.zip; do unzip -q -o $file -d /usr/local/
 
 RUN apt-get update && apt-get upgrade -y \
  && apt-get install -y \
-    xmlstarlet \
     libtiff-tools \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
