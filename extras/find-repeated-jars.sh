@@ -3,11 +3,14 @@
 # The script can be change to delete the files as well
 # For example: if a directory contains jersey-client-1.18.1.jar jersey-client-1.17.1.jar
 # it will advise to remove jersey-client-1.17.1.jar
+#
+# pass the --remove option to remove the files
 
-# pass the --remove option to remove the files'
+###
+### A Few Functions
+###
 
-# could have used dpkg --compare-versions 4.5.3  gt 4.5  && echo true || echo false
-
+#
 # Pad version numbers for comparision i.e. te-2.7.2.jar to te-2.07.02.jar
 #
 pad_numbers() {
@@ -62,6 +65,11 @@ usage() {
 		echo
 }
 
+
+###
+### Main
+###
+
 # TODO better option handling
 if [ "$#" -gt 0 ] ; then
 		if [ "$1" == '--remove' ] ; then
@@ -101,7 +109,6 @@ for PREFIX in ${PREFIXES} ; do
 	if [ "$prefix_file_count" -gt "1" ]; then
 
     	sorted_file=""
-		#for FILE_PAD in `echo $prefix_files | grep -- ^${PREFIX}${patternVersion} | pad_numbers | sort -r `; do
 		for FILE_PAD in `ls -r ${PREFIX}* | grep -- ^${PREFIX}${patternVersion} | pad_numbers | sort -r `; do
 
 			FILE_NOPAD=$(echo $FILE_PAD | remove_pad)
