@@ -16,11 +16,11 @@
     <ets-wcs11.version>1.15</ets-wcs11.version>
     <ets-wcs20.version>1.17</ets-wcs20.version>
     <ets-wfs10.version>1.13</ets-wfs10.version>
-    <ets-wfs11.version>1.32</ets-wfs11.version>
+    <ets-wfs11.version>1.33</ets-wfs11.version>
     <ets-wfs20.version>1.36</ets-wfs20.version>
     <ets-wms11.version>1.20</ets-wms11.version>
-    <ets-wms13.version>1.26</ets-wms13.version>
-    <ets-wmts10.version>1.3</ets-wmts10.version>
+    <ets-wms13.version>1.28</ets-wms13.version>
+    <ets-wmts10.version>1.4</ets-wmts10.version>
     <ets-csw202.version>1.18</ets-csw202.version>
     <ets-cat30.version>1.3</ets-cat30.version>
     <ets-gmljpx20.version>1.1</ets-gmljpx20.version>
@@ -28,12 +28,13 @@
     <ets-gpkg10.version>1.1</ets-gpkg10.version>
     <ets-gpkg12.version>1.1</ets-gpkg12.version>
     <ets-geotiff11.version>1.0</ets-geotiff11.version>
+    <ets-ogcapi-edr10.version>0.1</ets-ogcapi-edr10.version>
     <ets-ogcapi-features10.version>1.3</ets-ogcapi-features10.version>
     <ets-cdb10.version>1.0</ets-cdb10.version>
-    <ets-kml22.version>1.13</ets-kml22.version>
+    <ets-kml22.version>1.14</ets-kml22.version>
     <ets-kml2.version>0.5</ets-kml2.version>
     <ets-security-client10.version>0.6</ets-security-client10.version>
-    <ets-owc10.version>0.1</ets-owc10.version>
+    <ets-owc10.version>0.2</ets-owc10.version>
     <ets-omxml20.version>1.0</ets-omxml20.version>
     <ets-swecommon20.version>1.0.1</ets-swecommon20.version>
     <ets-sensorml10.version>1.0.1</ets-sensorml10.version>
@@ -315,6 +316,21 @@
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-cdb10</artifactId>
       <version>${ets-cdb10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS OGC API - EDR 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-ogcapi-edr10</artifactId>
+      <version>${ets-ogcapi-edr10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-ogcapi-edr10</artifactId>
+      <version>${ets-ogcapi-edr10.version}</version>
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
