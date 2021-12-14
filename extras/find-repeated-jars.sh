@@ -3,7 +3,7 @@
 # The script can be change to delete the files as well
 # For example: if a directory contains jersey-client-1.18.1.jar jersey-client-1.17.1.jar
 # it will advise to remove jersey-client-1.17.1.jar
-#
+
 # pass the --remove option to remove the files
 
 ###
@@ -65,7 +65,6 @@ usage() {
 		echo
 }
 
-
 ###
 ### Main
 ###
@@ -92,7 +91,7 @@ list_of_files_to_remove=""
 list_of_files_to_skip=""
 list_of_files_to_keep=""
 
-PREFIXES=$(ls -1 *.jar |sed  "s/$patternVersion//g" | uniq )
+PREFIXES=$(ls -1 -I "*-*-*-*" |sed  "s/$patternVersion//g" | uniq )
 
 for PREFIX in ${PREFIXES} ; do
 
@@ -109,6 +108,7 @@ for PREFIX in ${PREFIXES} ; do
 	if [ "$prefix_file_count" -gt "1" ]; then
 
     	sorted_file=""
+		#for FILE_PAD in `echo $prefix_files | grep -- ^${PREFIX}${patternVersion} | pad_numbers | sort -r `; do
 		for FILE_PAD in `ls -r ${PREFIX}* | grep -- ^${PREFIX}${patternVersion} | pad_numbers | sort -r `; do
 
 			FILE_NOPAD=$(echo $FILE_PAD | remove_pad)
