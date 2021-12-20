@@ -98,4 +98,11 @@
     <module>teamengine-production</module>
     <module>teamengine-beta</module>
   </modules>
+
+  <repositories>
+    <repository>
+      <id>osgeo-release</id>
+      <url>https://repo.osgeo.org/repository/release/</url>
+    </repository>
+  </repositories>
 </project>
