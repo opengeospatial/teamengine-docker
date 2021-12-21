@@ -18,6 +18,9 @@ RUN cd /root/ && unzip -q teamengine-console-*-base.zip -d /root/te_base
 # set TE_BASE
 ENV JAVA_OPTS="-Xms1024m -Xmx2048m -DTE_BASE=/root/te_base"
 
+### security log4j CVE-2021-44228
+ENV CATALINA_OPTS="$CATALINA_OPTS -Dlog4j2.formatMsgNoLookups=true"
+
 ADD ets-*-ctl.zip /root/
 RUN cd /root/ && for file in ets-*-ctl.zip; do unzip -q $file -d /root/te_base/scripts; done
 
