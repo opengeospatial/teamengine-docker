@@ -31,7 +31,7 @@ RUN apt-get update && apt-get upgrade -y \
  && rm -rf /var/lib/apt/lists/*
 
 COPY find-repeated-jars.sh /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/find-repeated-jars.sh
-COPY site /root/te_base/resources/site/
+#COPY site /root/te_base/resources/site/
 
 RUN rm -rf /root/te_base/scripts/note/ \
  && chmod +x /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/find-repeated-jars.sh \
