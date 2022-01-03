@@ -1,6 +1,6 @@
 #!/bin/bash
-mkdir tmp-test-suites-beta
-cd tmp-test-suites-beta/
+mkdir tmp-teamengine-docker-test-suites
+cd tmp-teamengine-docker-test-suites/
 
 echo Clone test suites
 git clone --depth 1 --branch 1.13 https://github.com/opengeospatial/ets-wfs10.git
@@ -25,4 +25,4 @@ mvn clean install -DskipTests
 cd ../..
 
 cd ..
-rm -rf tmp-test-suites-beta/
+rm -rf tmp-teamengine-docker-test-suites/
