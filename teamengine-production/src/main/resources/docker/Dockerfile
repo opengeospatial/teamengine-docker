@@ -33,13 +33,14 @@ RUN apt-get update && apt-get upgrade -y \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
-#COPY find-repeated-jars.sh /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/find-repeated-jars.sh
+COPY delete-duplicate-dependencies.sh /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh
+COPY list-of-duplicate-dependencies.txt /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/list-of-duplicate-dependencies.txt
 #COPY site /root/te_base/resources/site/
 
 RUN rm -rf /root/te_base/scripts/note/ \
-# && chmod +x /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/find-repeated-jars.sh \
+ && chmod +x /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh \
  && cd /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/ \
-# && /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/find-repeated-jars.sh --remove
+ && /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh
 
 # run tomcat
 CMD ["catalina.sh", "run"]
