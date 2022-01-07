@@ -79,6 +79,7 @@
           <configuration>
             <skipDocker>true</skipDocker>
             <dockerDirectory>${project.basedir}/src/main/resources/docker</dockerDirectory>
+            <serverId>docker.io</serverId>
             <resources>
               <resource>
                 <targetPath>/</targetPath>
