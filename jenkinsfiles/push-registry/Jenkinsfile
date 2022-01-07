@@ -1,0 +1,21 @@
+pipeline {
+  agent any
+  tools {
+    maven 'mvn'
+    jdk 'JDK 8'
+  }
+  stages {
+    stage('Preparation') {
+      steps{
+        deleteDir()
+        sh 'git clone git@github.com:opengeospatial/teamengine-docker.git .'
+      }
+    }
+    stage('Build and push to Docker Registry') {
+      steps{
+        sh 'scripts/build-test-suites-not-available-via-central-maven-repo.sh'
+        sh 'mvn clean package docker:build -DpushImage'
+      }
+    }
+  }
+}
