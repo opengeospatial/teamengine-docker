@@ -20,7 +20,15 @@ pipeline {
       steps{
         sh '''
           $SSH_COMMAND "
-          echo TODO
+          mkdir tmp-teamengine-site
+          cd tmp-teamengine-site
+          git clone https://github.com/opengeospatial/teamengine-site.git
+          mv teamengine-site/site-beta/ teamengine-site/site/
+          sudo -u docker docker exec teamengine-beta rm -r /root/te_base/resources/site/
+          sudo -u docker docker cp teamengine-site/site teamengine-beta:/root/te_base/resources/site/
+          sudo -u docker docker restart teamengine-beta
+          cd ..
+          rm -rf tmp-teamengine-site/
           "
           '''
       }

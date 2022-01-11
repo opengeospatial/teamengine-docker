@@ -35,7 +35,6 @@ RUN apt-get update && apt-get upgrade -y \
 
 COPY delete-duplicate-dependencies.sh /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh
 COPY list-of-duplicate-dependencies.txt /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/list-of-duplicate-dependencies.txt
-#COPY site /root/te_base/resources/site/
 
 RUN rm -rf /root/te_base/scripts/note/ \
  && chmod +x /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh \
