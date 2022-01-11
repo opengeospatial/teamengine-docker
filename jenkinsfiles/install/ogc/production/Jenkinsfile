@@ -1,1 +1,37 @@
-Dummy
+pipeline {
+  agent any
+  tools {
+    maven 'mvn'
+    jdk 'JDK 8'
+  }
+  stages {
+    stage('Remove old and create and start new container') {
+      steps{
+        sh '''
+          $SSH_COMMAND "
+          sudo -u docker docker rm -f teamengine-production
+          sudo -u docker docker pull ogccite/teamengine-production:latest
+          sudo -u docker docker run -d --name teamengine-production -p 8081:8080 -v /srv/local/team.dat/te-prod-users1:/root/te_base/users --restart unless-stopped ogccite/teamengine-production:latest
+          "
+          '''
+      }
+    }
+    stage('Apply teamengine-site') {
+      steps{
+        sh '''
+          $SSH_COMMAND "
+          mkdir tmp-teamengine-site
+          cd tmp-teamengine-site
+          git clone https://github.com/opengeospatial/teamengine-site.git
+          mv teamengine-site/site-production/ teamengine-site/site/
+          sudo -u docker docker exec teamengine-production rm -r /root/te_base/resources/site/
+          sudo -u docker docker cp teamengine-site/site teamengine-production:/root/te_base/resources/site/
+          sudo -u docker docker restart teamengine-production
+          cd ..
+          rm -rf tmp-teamengine-site/
+          "
+          '''
+      }
+    }
+  }
+}
