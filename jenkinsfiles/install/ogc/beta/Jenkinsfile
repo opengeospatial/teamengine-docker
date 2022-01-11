@@ -10,6 +10,7 @@ pipeline {
         sh '''
           $SSH_COMMAND "
           sudo -u docker docker rm -f teamengine-beta
+          sudo -u docker docker pull ogccite/teamengine-beta:latest
           sudo -u docker docker run -d --name teamengine-beta -p 8082:8080 -v /srv/local/team.dat/te-beta-users1:/root/te_base/users --restart unless-stopped ogccite/teamengine-beta:latest
           "
           '''
