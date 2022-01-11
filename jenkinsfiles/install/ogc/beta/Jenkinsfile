@@ -1,0 +1,31 @@
+pipeline {
+  agent any
+  tools {
+    maven 'mvn'
+    jdk 'JDK 8'
+  }
+  parameters {
+    string(description: 'Command to login on target server', name: 'SSH_COMMAND')
+  }
+  stages {
+    stage('Remove old and create and start new container') {
+      steps{
+        sh '''
+          $SSH_COMMAND "
+          docker rm -f teamengine-beta
+          sudo -u docker docker run -d --name teamengine-beta -p 8082:8080 -v /srv/local/team.dat/te-beta-users1:/root/te_base/users --restart unless-stopped ogccite/teamengine-beta:latest
+          "
+          '''
+      }
+    }
+    stage('Apply teamengine-site') {
+      steps{
+        sh '''
+          $SSH_COMMAND "
+          echo TODO
+          "
+          '''
+      }
+    }
+  }
+}
