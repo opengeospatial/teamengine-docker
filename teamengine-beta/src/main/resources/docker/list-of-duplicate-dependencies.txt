@@ -18,3 +18,5 @@ geoapi-3.0.1.jar
 sis-referencing-1.0.jar
 sis-metadata-1.0.jar
 sis-utility-1.0.jar
+commons-validator-1.6.jar
+jaxb-api-2.2.12.jar
