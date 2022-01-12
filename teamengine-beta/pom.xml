@@ -220,6 +220,13 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wmts10</artifactId>
+      <version>${ets-wmts10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS CSW 2.0.2 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -508,6 +515,13 @@
       <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-sos20</artifactId>
+      <version>${ets-sos20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS SPS 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -560,6 +574,13 @@
       <artifactId>ets-wps10</artifactId>
       <version>${ets-wps10.version}</version>
       <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wps10</artifactId>
+      <version>${ets-wps10.version}</version>
+      <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
     <!-- ETS DGIWG WFS 2.0 -->
