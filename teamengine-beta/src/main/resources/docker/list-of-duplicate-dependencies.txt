@@ -23,16 +23,3 @@ jaxb-api-2.2.12.jar
 commons-fileupload-1.3.1.jar
 commons-io-2.6.jar
 geomatics-geotk-1.15.jar
-groovy-2.4.12.jar
-groovy-json-2.4.12.jar
-httpmime-4.5.1.jar
-jackson-annotations-2.9.0.jar
-jackson-core-2.9.8.jar
-jackson-databind-2.9.8.jar
-jackson-dataformat-yaml-2.9.8.jar
-json-path-3.1.0.jar
-rest-assured-3.1.0.jar
-rest-assured-common-3.1.0.jar
-slf4j-api-1.7.20.jar
-snakeyaml-1.23.jar
-xml-path-3.1.0.jar
