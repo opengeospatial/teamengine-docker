@@ -1,5 +1,3 @@
-**Attention: This manual is outdated and must be updated!**
-
 # Running OGC TEAM Engine with selected executable test suites on Docker
 
 This project provides Dockerfiles for building Docker Images with OGC TEAM Engine and selected executable test suites pre-installed.
