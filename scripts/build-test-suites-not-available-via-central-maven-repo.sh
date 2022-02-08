@@ -2,6 +2,34 @@
 mkdir tmp-teamengine-docker-test-suites
 cd tmp-teamengine-docker-test-suites/
 
+echo Build teamengine 5.0
+git clone --depth 1 --branch 5.0 https://github.com/opengeospatial/teamengine.git
+cd teamengine/
+mvn clean install -DskipTests
+cd ../
+rm -rf teamengine
+
+echo Build ets-dgiwg-core 0.3
+git clone --depth 1 --branch 0.3 https://github.com/opengeospatial/ets-dgiwg-core.git
+cd ets-dgiwg-core/
+mvn clean install -DskipTests
+cd ../
+rm -rf ets-dgiwg-core
+
+echo Build ets-dgiwg-core 0.4
+git clone --depth 1 --branch 0.4 https://github.com/opengeospatial/ets-dgiwg-core.git
+cd ets-dgiwg-core/
+mvn clean install -DskipTests
+cd ../
+rm -rf ets-dgiwg-core
+
+echo Build ets-wfs20 1.28
+git clone --depth 1 --branch 1.28 https://github.com/opengeospatial/ets-wfs20.git
+cd ets-wfs20/
+mvn clean install -DskipTests
+cd ../
+rm -rf ets-wfs20
+
 echo Clone test suites
 git clone --depth 1 --branch 1.13 https://github.com/opengeospatial/ets-wfs10.git
 git clone --depth 1 --branch 1.32 https://github.com/opengeospatial/ets-wfs11.git
@@ -12,6 +40,11 @@ git clone --depth 1 --branch 1.4 https://github.com/opengeospatial/ets-sfs12.git
 git clone --depth 1 --branch 1.14 https://github.com/opengeospatial/ets-sos10.git
 git clone --depth 1 --branch 1.8 https://github.com/opengeospatial/ets-sps10.git
 git clone --depth 1 --branch 1.11 https://github.com/opengeospatial/ets-sps20.git
+git clone --depth 1 --branch 0.4 https://github.com/opengeospatial/ets-wfs20-dgiwg.git
+git clone --depth 1 --branch 0.4 https://github.com/opengeospatial/ets-wms13-dgiwg.git
+git clone --depth 1 --branch 0.3 https://github.com/opengeospatial/ets-wfs20-nsg.git
+git clone --depth 1 --branch 0.3 https://github.com/opengeospatial/ets-wmts10-nsg.git
+git clone --depth 1 --branch 0.2 https://github.com/opengeospatial/ets-wms13-nsg.git
 
 echo Build test suites
 for d in */ ; do
@@ -26,3 +59,5 @@ cd ../..
 
 cd ..
 rm -rf tmp-teamengine-docker-test-suites/
+
+echo Completed script
