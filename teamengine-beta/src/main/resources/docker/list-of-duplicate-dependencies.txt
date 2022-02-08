@@ -23,3 +23,8 @@ jaxb-api-2.2.12.jar
 commons-fileupload-1.3.1.jar
 commons-io-2.6.jar
 geomatics-geotk-1.15.jar
+ets-dgiwg-core-0.3.jar
+ets-gml32-1.25.jar
+ets-gpkg12-0.7.jar
+ets-wfs20-1.28.jar
+geomatics-geotk-1.14.jar
