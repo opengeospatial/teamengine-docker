@@ -13,16 +13,16 @@ RUN cd /root/ && unzip -q teamengine-web-*-common-libs.zip -d /usr/local/tomcat/
 
 # add TEAM engine console
 ADD teamengine-console-*-base.zip /root/
-RUN cd /root/ && unzip -q teamengine-console-*-base.zip -d /root/te_base
+RUN cd /root/ && unzip -q teamengine-console-*-base.zip -d /usr/local/tomcat/te_base
 
 # set TE_BASE
-ENV JAVA_OPTS="-Xms1024m -Xmx2048m -DTE_BASE=/root/te_base"
+ENV JAVA_OPTS="-Xms1024m -Xmx2048m -DTE_BASE=/usr/local/tomcat/te_base"
 
 ### security log4j CVE-2021-44228
 ENV CATALINA_OPTS="$CATALINA_OPTS -Dlog4j2.formatMsgNoLookups=true"
 
 ADD ets-*-ctl.zip /root/
-RUN cd /root/ && for file in ets-*-ctl.zip; do unzip -q $file -d /root/te_base/scripts; done
+RUN cd /root/ && for file in ets-*-ctl.zip; do unzip -q $file -d /usr/local/tomcat/te_base/scripts; done
 
 ADD ets-*-deps.zip /root/
 RUN cd /root/ && for file in ets-*-deps.zip; do unzip -q -o $file -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib; done
@@ -36,11 +36,17 @@ RUN apt-get update && apt-get upgrade -y \
 COPY delete-duplicate-dependencies.sh /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh
 COPY list-of-duplicate-dependencies.txt /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/list-of-duplicate-dependencies.txt
 
-RUN rm -rf /root/te_base/scripts/note/ \
+RUN rm -rf /usr/local/tomcat/te_base/scripts/note/ \
  && chmod +x /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh \
  && cd /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/ \
  && /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh \
  && mv /usr/local/tomcat/webapps/teamengine/ /usr/local/tomcat/webapps/te2
+
+RUN useradd tomcat
+
+RUN chown -R tomcat:tomcat /usr/local/tomcat
+
+USER tomcat
 
 # run tomcat
 CMD ["catalina.sh", "run"]
