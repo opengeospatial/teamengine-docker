@@ -42,9 +42,7 @@ RUN rm -rf /usr/local/tomcat/te_base/scripts/note/ \
  && /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh \
  && mv /usr/local/tomcat/webapps/teamengine/ /usr/local/tomcat/webapps/te2
 
-RUN useradd tomcat
-
-RUN chown -R tomcat:tomcat /usr/local/tomcat
+RUN useradd tomcat && chown -R tomcat:tomcat /usr/local/tomcat
 
 USER tomcat
 
