@@ -61,12 +61,12 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>com.spotify</groupId>
+        <groupId>io.fabric8</groupId>
         <artifactId>docker-maven-plugin</artifactId>
-        <configuration>
-          <skipDocker>false</skipDocker>
-          <imageName>ogccite/${project.artifactId}</imageName>
-        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
       </plugin>
     </plugins>
   </build>

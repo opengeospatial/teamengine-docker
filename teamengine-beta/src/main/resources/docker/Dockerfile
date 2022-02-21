@@ -4,15 +4,15 @@ MAINTAINER Dirk Stenger <stenger@lat-lon.de>
 MAINTAINER Torsten Friebe <friebe@lat-lon.de>
 
 # add TEAM engine webapp
-ADD teamengine-web-*.war /root/
+ADD maven/teamengine-web-*.war /root/
 RUN cd /root/ && unzip -q teamengine-web-*.war -d /usr/local/tomcat/webapps/teamengine
 
 # add common libs
-ADD teamengine-web-*-common-libs.zip /root/
+ADD maven/teamengine-web-*-common-libs.zip /root/
 RUN cd /root/ && unzip -q teamengine-web-*-common-libs.zip -d /usr/local/tomcat/lib
 
 # add TEAM engine console
-ADD teamengine-console-*-base.zip /root/
+ADD maven/teamengine-console-*-base.zip /root/
 RUN cd /root/ && unzip -q teamengine-console-*-base.zip -d /root/te_base
 
 # set TE_BASE
@@ -21,10 +21,10 @@ ENV JAVA_OPTS="-Xms1024m -Xmx2048m -DTE_BASE=/root/te_base"
 ### security log4j CVE-2021-44228
 ENV CATALINA_OPTS="$CATALINA_OPTS -Dlog4j2.formatMsgNoLookups=true"
 
-ADD ets-*-ctl.zip /root/
+ADD maven/ets-*-ctl.zip /root/
 RUN cd /root/ && for file in ets-*-ctl.zip; do unzip -q $file -d /root/te_base/scripts; done
 
-ADD ets-*-deps.zip /root/
+ADD maven/ets-*-deps.zip /root/
 RUN cd /root/ && for file in ets-*-deps.zip; do unzip -q -o $file -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib; done
 
 RUN apt-get update && apt-get upgrade -y \
