@@ -16,7 +16,7 @@ ADD teamengine-console-*-base.zip /root/
 RUN cd /root/ && unzip -q teamengine-console-*-base.zip -d /usr/local/tomcat/te_base
 
 # set TE_BASE
-ENV JAVA_OPTS="-Xms1024m -Xmx2048m -DTE_BASE=/usr/local/tomcat/te_base"
+ENV JAVA_OPTS="-Xms1024m -Xmx3072m -DTE_BASE=/usr/local/tomcat/te_base"
 
 ### security log4j CVE-2021-44228
 ENV CATALINA_OPTS="$CATALINA_OPTS -Dlog4j2.formatMsgNoLookups=true"
