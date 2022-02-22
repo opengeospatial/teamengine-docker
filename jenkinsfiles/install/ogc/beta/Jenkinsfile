@@ -11,7 +11,7 @@ pipeline {
           $SSH_COMMAND "
           sudo -u docker docker rm -f teamengine-beta
           sudo -u docker docker pull ogccite/teamengine-beta:latest
-          sudo -u docker docker run -d --name teamengine-beta -p 8082:8080 -v /srv/local/team.dat/te-beta-users1:/root/te_base/users --restart unless-stopped ogccite/teamengine-beta:latest
+          sudo -u docker docker run -d --name teamengine-beta -p 8082:8080 -v /srv/local/team.dat/te-beta-users1:/usr/local/tomcat/te_base/users --restart unless-stopped ogccite/teamengine-beta:latest
           "
           '''
       }
@@ -24,8 +24,8 @@ pipeline {
           cd tmp-teamengine-site
           git clone https://github.com/opengeospatial/teamengine-site.git
           mv teamengine-site/site-beta/ teamengine-site/site/
-          sudo -u docker docker exec teamengine-beta rm -r /root/te_base/resources/site/
-          sudo -u docker docker cp teamengine-site/site teamengine-beta:/root/te_base/resources/site/
+          sudo -u docker docker exec teamengine-beta rm -r /usr/local/tomcat/te_base/resources/site/
+          sudo -u docker docker cp teamengine-site/site teamengine-beta:/usr/local/tomcat/te_base/resources/site/
           sudo -u docker docker restart teamengine-beta
           cd ..
           rm -rf tmp-teamengine-site/
