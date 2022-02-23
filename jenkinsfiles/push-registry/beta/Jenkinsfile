@@ -14,7 +14,7 @@ pipeline {
     stage('Build and push to Docker Registry') {
       steps{
         sh 'scripts/build-test-suites-not-available-via-central-maven-repo.sh'
-        sh 'cd teamengine-beta && mvn clean package docker:build -DpushImage'
+        sh 'cd teamengine-beta && mvn clean install docker:push'
       }
     }
   }

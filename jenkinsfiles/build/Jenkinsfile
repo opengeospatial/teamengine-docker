@@ -14,7 +14,7 @@ pipeline {
     stage('Build') {
       steps{
         sh 'scripts/build-test-suites-not-available-via-central-maven-repo.sh'
-        sh 'mvn clean package docker:build'
+        sh 'mvn clean install'
       }
     }
   }
