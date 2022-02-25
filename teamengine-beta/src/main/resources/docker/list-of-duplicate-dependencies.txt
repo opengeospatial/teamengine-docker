@@ -15,6 +15,7 @@ schema-utils-1.7.jar
 slf4j-api-1.7.6.jar
 xercesImpl-2.12.0.jar
 xercesImpl-2.12.1.jar
+xercesImpl-xsd11-shaded-2.12-beta-r1667115.jar
 geoapi-3.0.1.jar
 sis-referencing-1.0.jar
 sis-metadata-1.0.jar
