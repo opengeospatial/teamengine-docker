@@ -12,6 +12,8 @@ pipeline {
           sudo -u docker docker rm -f teamengine-production
           sudo -u docker docker pull ogccite/teamengine-production:latest
           sudo -u docker docker run -d --name teamengine-production -p 8081:8080 -v /srv/local/team.dat/te-prod-users1:/root/te_base/users --restart unless-stopped ogccite/teamengine-production:latest
+          sudo -u docker docker exec teamengine-production rm -fr /usr/local/tomcat/te_base/resources/site/
+          sudo -u docker docker exec teamengine-production sh -c 'date >> /tmp/prov.txt ; sed -i -e \"s/\$/ create container/\" /tmp/prov.txt '
           "
           '''
       }
@@ -28,6 +30,7 @@ pipeline {
           sudo -u docker docker exec teamengine-production rm -fr /root/te_base/resources/site/
           sudo -u docker docker exec teamengine-production sh -c 'mkdir /root/te_base/resources/ >/dev/null 2>&1'
           sudo -u docker docker cp teamengine-site/site teamengine-production:/root/te_base/resources/site/
+          sudo -u docker docker exec teamengine-production sh -c 'date >> /tmp/prov.txt ; sed -i -e \"s/\$/ Apply site/\" /tmp/prov.txt '
           cd ..
           rm -rf tmp-teamengine-site/
           "
