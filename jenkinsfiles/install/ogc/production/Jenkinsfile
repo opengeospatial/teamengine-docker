@@ -24,7 +24,6 @@ pipeline {
           cd tmp-teamengine-site
           git clone https://github.com/opengeospatial/teamengine-site.git
           mv teamengine-site/site-production/ teamengine-site/site/
-          sudo -u docker docker exec teamengine-production rm -fr /usr/local/tomcat/te_base/resources/site/
           sudo -u docker docker exec teamengine-production rm -fr /root/te_base/resources/site/
           sudo -u docker docker exec teamengine-production sh -c 'mkdir /root/te_base/resources/ >/dev/null 2>&1'
           sudo -u docker docker cp teamengine-site/site teamengine-production:/root/te_base/resources/site/
