@@ -26,8 +26,7 @@ pipeline {
           mv teamengine-site/site-production/ teamengine-site/site/
           sudo -u docker docker exec teamengine-production rm -r /usr/local/tomcat/te_base/resources/site/
           sudo -u docker docker cp teamengine-site/site teamengine-production:/usr/local/tomcat/te_base/resources/site/
-          sudo -u docker docker container stop teamengine-production
-          sudo -u docker docker run -d --name teamengine-production -p 8081:8080 -v /srv/local/team.dat/te-prod-users1:/usr/local/tomcat/te_base/users --restart unless-stopped ogccite/teamengine-production:latest
+          sudo -u docker docker restart teamengine-production
           cd ..
           rm -rf tmp-teamengine-site/
           "
