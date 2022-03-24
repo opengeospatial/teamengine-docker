@@ -1,0 +1,14 @@
+pipeline {
+  agent any
+  stages {
+    stage('Restart container') {
+      steps{
+        sh '''
+          $SSH_COMMAND "
+          sudo -u docker docker restart teamengine-beta
+          "
+          '''
+      }
+    }
+  }
+}
