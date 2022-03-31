@@ -23,11 +23,12 @@
     <ets-wmts10.version>1.4</ets-wmts10.version>
     <ets-csw202.version>1.18</ets-csw202.version>
     <ets-cat30.version>1.4</ets-cat30.version>
-    <ets-gmljpx20.version>1.1</ets-gmljpx20.version>
+    <ets-gmljpx20.version>1.2</ets-gmljpx20.version>
     <ets-gml32.version>1.30</ets-gml32.version>
-    <ets-gpkg10.version>1.1</ets-gpkg10.version>
+    <ets-gpkg10.version>1.2</ets-gpkg10.version>
     <ets-gpkg12.version>1.1</ets-gpkg12.version>
-    <ets-geotiff11.version>1.0</ets-geotiff11.version>
+    <ets-geotiff11.version>1.1</ets-geotiff11.version>
+    <ets-georss10.version>0.1</ets-georss10.version>
     <ets-ogcapi-edr10.version>0.2</ets-ogcapi-edr10.version>
     <ets-ogcapi-features10.version>1.3</ets-ogcapi-features10.version>
 <!--    <ets-ogcapi-processes10.version>0.1</ets-ogcapi-processes10.version>-->
@@ -36,7 +37,7 @@
     <ets-kml2.version>0.5</ets-kml2.version>
     <ets-security-client10.version>0.6</ets-security-client10.version>
     <ets-owc10.version>0.2</ets-owc10.version>
-    <ets-omxml20.version>1.0</ets-omxml20.version>
+    <ets-omxml20.version>1.1</ets-omxml20.version>
     <ets-swecommon20.version>1.1</ets-swecommon20.version>
     <ets-sensorml10.version>1.0.1</ets-sensorml10.version>
     <ets-sensorml20.version>1.0</ets-sensorml20.version>
@@ -323,6 +324,21 @@
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-geotiff11</artifactId>
       <version>${ets-geotiff11.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS GeoRSS 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-georss10</artifactId>
+      <version>${ets-georss10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-georss10</artifactId>
+      <version>${ets-georss10.version}</version>
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
