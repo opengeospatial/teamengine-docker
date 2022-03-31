@@ -54,9 +54,9 @@ Run following commands to build a Docker Image with TEAM Engine and all selected
 
     % git clone https://github.com/opengeospatial/teamengine-docker.git
     % cd teamengine-docker 
-    % mvn clean package docker:build
+    % mvn clean install
 
-If those commands are executed, all modules are built (```mvn clean package docker:build``` is executed in root directory of this project).
+If those commands are executed, all modules are built (```mvn clean install``` is executed in root directory of this project).
 
 ## Running TEAM Engine inside a Docker Container
 
