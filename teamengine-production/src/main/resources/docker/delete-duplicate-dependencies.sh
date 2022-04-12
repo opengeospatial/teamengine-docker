@@ -3,5 +3,5 @@ filename='list-of-duplicate-dependencies.txt'
 
 while read p; do
     echo Deleting "$p"
-    rm -rf "$p"
+    rm -rfv "$p" | wc -l
 done < "$filename"
