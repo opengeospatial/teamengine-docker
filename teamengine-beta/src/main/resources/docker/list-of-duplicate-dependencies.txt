@@ -24,13 +24,8 @@ slf4j-api-1.7.6.jar
 xercesImpl-2.12.0.jar
 xercesImpl-2.12.1.jar
 xercesImpl-xsd11-shaded-2.12-beta-r1667115.jar
-geoapi-3.0.1.jar
-sis-referencing-1.0.jar
-sis-metadata-1.0.jar
-sis-utility-1.0.jar
 commons-validator-1.6.jar
 jaxb-api-2.2.12.jar
-commons-fileupload-1.3.1.jar
 commons-io-2.6.jar
 geomatics-geotk-1.15.jar
 ets-dgiwg-core-0.3.jar
