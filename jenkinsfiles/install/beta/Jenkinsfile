@@ -26,7 +26,6 @@ pipeline {
           mv teamengine-site/site-beta/ teamengine-site/site/
           sudo -u docker docker exec teamengine-beta rm -r /usr/local/tomcat/te_base/resources/site/
           sudo -u docker docker cp teamengine-site/site teamengine-beta:/usr/local/tomcat/te_base/resources/site/
-          sudo -u docker docker restart teamengine-beta
           cd ..
           rm -rf tmp-teamengine-site/
           "
