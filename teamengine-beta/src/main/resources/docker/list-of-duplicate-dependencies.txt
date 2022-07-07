@@ -32,3 +32,9 @@ jackson-core-2.9.8.jar
 jackson-databind-2.9.8.jar
 jackson-dataformat-yaml-2.9.8.jar
 snakeyaml-1.23.jar
+slf4j-log4j12-1.7.6.jar
+teamengine-web-5.4.1-common-libs.zip
+teamengine-realm-5.4.1.jar
+teamengine-resources-5.4.1.jar
+teamengine-console-5.4.1-base.zip
+teamengine-web-5.4.1.war
