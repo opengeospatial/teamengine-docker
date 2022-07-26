@@ -15,24 +15,25 @@
     <ets-wcs10.version>1.16</ets-wcs10.version>
     <ets-wcs11.version>1.15</ets-wcs11.version>
     <ets-wcs20.version>1.17</ets-wcs20.version>
-    <ets-wfs10.version>1.12</ets-wfs10.version>
-    <ets-wfs11.version>1.32</ets-wfs11.version>
-    <ets-wfs20.version>1.36</ets-wfs20.version>
-    <ets-wms11.version>1.20</ets-wms11.version>
-    <ets-wms13.version>1.26</ets-wms13.version>
-    <ets-wmts10.version>1.3</ets-wmts10.version>
+    <ets-wfs10.version>1.13</ets-wfs10.version>
+    <ets-wfs11.version>1.33</ets-wfs11.version>
+    <ets-wfs20.version>1.38</ets-wfs20.version>
+    <ets-wms11.version>1.21</ets-wms11.version>
+    <ets-wms13.version>1.28</ets-wms13.version>
+    <ets-wmts10.version>1.4</ets-wmts10.version>
     <ets-csw202.version>1.18</ets-csw202.version>
-    <ets-cat30.version>1.3</ets-cat30.version>
-    <ets-gmljpx20.version>1.1</ets-gmljpx20.version>
-    <ets-gml32.version>1.29</ets-gml32.version>
-    <ets-gpkg10.version>1.1</ets-gpkg10.version>
+    <ets-cat30.version>1.4</ets-cat30.version>
+    <ets-gmljpx20.version>1.2</ets-gmljpx20.version>
+    <ets-gml32.version>1.30</ets-gml32.version>
+    <ets-gpkg10.version>1.2</ets-gpkg10.version>
     <ets-gpkg12.version>1.1</ets-gpkg12.version>
-    <ets-geotiff11.version>1.0</ets-geotiff11.version>
-    <ets-ogcapi-features10.version>1.3</ets-ogcapi-features10.version>
+    <ets-geotiff11.version>1.1</ets-geotiff11.version>
+    <ets-georss10.version>1.0</ets-georss10.version>
+    <ets-ogcapi-features10.version>1.4</ets-ogcapi-features10.version>
     <ets-cdb10.version>1.0</ets-cdb10.version>
-    <ets-kml22.version>1.13</ets-kml22.version>
-    <ets-omxml20.version>1.0</ets-omxml20.version>
-    <ets-swecommon20.version>1.0.1</ets-swecommon20.version>
+    <ets-kml22.version>1.14</ets-kml22.version>
+    <ets-omxml20.version>1.1</ets-omxml20.version>
+    <ets-swecommon20.version>1.1</ets-swecommon20.version>
     <ets-sensorml10.version>1.0.1</ets-sensorml10.version>
     <ets-sensorml20.version>1.0</ets-sensorml20.version>
     <ets-sfs11.version>1.8</ets-sfs11.version>
@@ -42,8 +43,7 @@
     <ets-sps10.version>1.8</ets-sps10.version>
     <ets-sps20.version>1.11</ets-sps20.version>
     <ets-sta10.version>1.2</ets-sta10.version>
-    <ets-wms-client13.version>1.5</ets-wms-client13.version>
-    <ets-georss10.version>1.0</ets-georss10.version>
+    <ets-wms-client13.version>1.6</ets-wms-client13.version>
   </properties>
 
   <build>
