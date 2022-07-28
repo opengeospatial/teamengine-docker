@@ -32,7 +32,6 @@ rm -rf ets-wfs20
 
 echo Clone test suites
 git clone --depth 1 --branch 1.13 https://github.com/opengeospatial/ets-wfs10.git
-git clone --depth 1 --branch 1.32 https://github.com/opengeospatial/ets-wfs11.git
 git clone --depth 1 --branch 1.18 https://github.com/opengeospatial/ets-csw202.git
 git clone --depth 1 --branch 0.5 https://github.com/opengeospatial/ets-kml2.git
 git clone --depth 1 --branch 1.8 https://github.com/opengeospatial/ets-sfs11.git
