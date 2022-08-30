@@ -21,11 +21,9 @@ xercesImpl-2.12.1.jar
 xercesImpl-xsd11-shaded-2.12-beta-r1667115.jar
 commons-io-2.6.jar
 geomatics-geotk-1.15.jar
-ets-dgiwg-core-0.3.jar
 ets-gml32-1.25.jar
 ets-gpkg12-0.7.jar
 ets-wfs20-1.28.jar
-geomatics-geotk-1.14.jar
 jackson-annotations-2.9.0.jar
 jackson-core-2.9.8.jar
 jackson-databind-2.9.8.jar
