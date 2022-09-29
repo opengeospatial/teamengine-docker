@@ -52,6 +52,7 @@
     <ets-sta10.version>1.2</ets-sta10.version>
     <ets-wms-client13.version>1.6</ets-wms-client13.version>
     <ets-wps10.version>0.8</ets-wps10.version>
+    <ets-wps20.version>0.1</ets-wps20.version>
     <ets-wfs20-dgiwg.version>0.6</ets-wfs20-dgiwg.version>
     <ets-wms13-dgiwg.version>0.5</ets-wms13-dgiwg.version>
     <ets-wms13-nsg.version>0.4</ets-wms13-nsg.version>
@@ -644,6 +645,21 @@
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-wps10</artifactId>
       <version>${ets-wps10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS WPS 2.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wps20</artifactId>
+      <version>${ets-wps20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wps20</artifactId>
+      <version>${ets-wps20.version}</version>
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
