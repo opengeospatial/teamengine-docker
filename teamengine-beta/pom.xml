@@ -13,7 +13,7 @@
   <properties>
     <teamengine.version>5.5.2</teamengine.version>
     <ets-wcs10.version>1.16</ets-wcs10.version>
-    <ets-wcs11.version>1.15</ets-wcs11.version>
+    <ets-wcs11.version>1.16</ets-wcs11.version>
     <ets-wcs20.version>1.17</ets-wcs20.version>
     <ets-wfs10.version>1.13</ets-wfs10.version>
     <ets-wfs11.version>1.33</ets-wfs11.version>
@@ -31,7 +31,7 @@
     <ets-geotiff11.version>1.1</ets-geotiff11.version>
     <ets-georss10.version>1.0</ets-georss10.version>
     <ets-eo-geojson10.version>0.1</ets-eo-geojson10.version>
-    <ets-ogcapi-edr10.version>0.3</ets-ogcapi-edr10.version>
+    <ets-ogcapi-edr10.version>0.4</ets-ogcapi-edr10.version>
     <ets-ogcapi-features10.version>1.4</ets-ogcapi-features10.version>
     <ets-ogcapi-processes10.version>0.3</ets-ogcapi-processes10.version>
     <ets-cdb10.version>1.0</ets-cdb10.version>
@@ -49,7 +49,7 @@
     <ets-sos20.version>1.14</ets-sos20.version>
     <ets-sps10.version>1.8</ets-sps10.version>
     <ets-sps20.version>1.11</ets-sps20.version>
-    <ets-sta10.version>1.2</ets-sta10.version>
+    <ets-sta10.version>1.3</ets-sta10.version>
     <ets-wms-client13.version>1.6</ets-wms-client13.version>
     <ets-wps10.version>0.8</ets-wps10.version>
     <ets-wps20.version>0.1</ets-wps20.version>
