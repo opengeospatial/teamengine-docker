@@ -35,7 +35,6 @@ git clone --depth 1 --branch 1.11 https://github.com/opengeospatial/ets-sps20.gi
 git clone --depth 1 --branch 0.4 https://github.com/opengeospatial/ets-wms13-dgiwg.git
 git clone --depth 1 --branch 0.5 https://github.com/opengeospatial/ets-wms13-dgiwg.git
 git clone --depth 1 --branch 1.16 https://github.com/opengeospatial/ets-wcs11.git
-git clone --depth 1 --branch 0.4 https://github.com/opengeospatial/ets-ogcapi-edr10.git
 git clone --depth 1 --branch 1.3 https://github.com/opengeospatial/ets-sta10.git
 
 echo Build test suites

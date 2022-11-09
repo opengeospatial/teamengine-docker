@@ -30,8 +30,8 @@
     <ets-gpkg12.version>1.1</ets-gpkg12.version>
     <ets-geotiff11.version>1.1</ets-geotiff11.version>
     <ets-georss10.version>1.0</ets-georss10.version>
-    <ets-eo-geojson10.version>0.1</ets-eo-geojson10.version>
-    <ets-ogcapi-edr10.version>0.4</ets-ogcapi-edr10.version>
+    <ets-eo-geojson10.version>0.2</ets-eo-geojson10.version>
+    <ets-ogcapi-edr10.version>0.5</ets-ogcapi-edr10.version>
     <ets-ogcapi-features10.version>1.4</ets-ogcapi-features10.version>
     <ets-ogcapi-processes10.version>0.3</ets-ogcapi-processes10.version>
     <ets-cdb10.version>1.0</ets-cdb10.version>
