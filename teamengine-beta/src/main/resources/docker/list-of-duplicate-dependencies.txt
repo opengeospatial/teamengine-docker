@@ -6,6 +6,7 @@ commons-lang3-3.7.jar
 commons-lang3-3.4.jar
 ets-gml32-1.21.jar
 ets-gml32-1.29.jar
+ets-wfs20-1.38.jar
 geomatics-geotk-1.9.jar
 httpcore-4.4.1.jar
 joda-time-2.8.jar
