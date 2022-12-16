@@ -11,7 +11,7 @@
   </parent>
 
   <properties>
-    <teamengine.version>5.4.1</teamengine.version>
+    <teamengine.version>5.5.2</teamengine.version>
     <ets-wcs10.version>1.16</ets-wcs10.version>
     <ets-wcs11.version>1.15</ets-wcs11.version>
     <ets-wcs20.version>1.17</ets-wcs20.version>
@@ -30,6 +30,7 @@
     <ets-geotiff11.version>1.1</ets-geotiff11.version>
     <ets-georss10.version>1.0</ets-georss10.version>
     <ets-ogcapi-features10.version>1.4</ets-ogcapi-features10.version>
+    <ets-ogcapi-edr10.version>1.0</ets-ogcapi-edr10.version>
     <ets-cdb10.version>1.0</ets-cdb10.version>
     <ets-kml22.version>1.14</ets-kml22.version>
     <ets-omxml20.version>1.1</ets-omxml20.version>
@@ -326,6 +327,21 @@
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-ogcapi-features10</artifactId>
       <version>${ets-ogcapi-features10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS OGC API - EDR 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-ogcapi-edr10</artifactId>
+      <version>${ets-ogcapi-edr10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-ogcapi-edr10</artifactId>
+      <version>${ets-ogcapi-edr10.version}</version>
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
