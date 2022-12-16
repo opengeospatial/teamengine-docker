@@ -32,8 +32,8 @@ git clone --depth 1 --branch 1.4 https://github.com/opengeospatial/ets-sfs12.git
 git clone --depth 1 --branch 1.14 https://github.com/opengeospatial/ets-sos10.git
 git clone --depth 1 --branch 1.8 https://github.com/opengeospatial/ets-sps10.git
 git clone --depth 1 --branch 1.11 https://github.com/opengeospatial/ets-sps20.git
-git clone --depth 1 --branch 0.4 https://github.com/opengeospatial/ets-wms13-dgiwg.git
-git clone --depth 1 --branch 0.5 https://github.com/opengeospatial/ets-wms13-dgiwg.git
+git clone --depth 1 --branch 0.4 https://github.com/opengeospatial/ets-wms13-dgiwg.git ets-wms13-dgiwg-0.4
+git clone --depth 1 --branch 0.5 https://github.com/opengeospatial/ets-wms13-dgiwg.git ets-wms13-dgiwg-0.5
 git clone --depth 1 --branch 1.16 https://github.com/opengeospatial/ets-wcs11.git
 git clone --depth 1 --branch 1.3 https://github.com/opengeospatial/ets-sta10.git
 
