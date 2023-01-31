@@ -13,10 +13,10 @@
   <properties>
     <teamengine.version>5.5.2</teamengine.version>
     <ets-wcs10.version>1.16</ets-wcs10.version>
-    <ets-wcs11.version>1.16</ets-wcs11.version>
+    <ets-wcs11.version>1.17</ets-wcs11.version>
     <ets-wcs20.version>1.18</ets-wcs20.version>
     <ets-wfs10.version>1.13</ets-wfs10.version>
-    <ets-wfs11.version>1.33</ets-wfs11.version>
+    <ets-wfs11.version>1.34</ets-wfs11.version>
     <ets-wfs20.version>1.39</ets-wfs20.version>
     <ets-wms11.version>1.21</ets-wms11.version>
     <ets-wms13.version>1.28</ets-wms13.version>
@@ -35,7 +35,7 @@
     <ets-ogcapi-features10.version>1.4</ets-ogcapi-features10.version>
     <ets-ogcapi-processes10.version>0.3</ets-ogcapi-processes10.version>
     <ets-cdb10.version>1.0</ets-cdb10.version>
-    <ets-kml22.version>1.14</ets-kml22.version>
+    <ets-kml22.version>1.15</ets-kml22.version>
     <ets-kml2.version>0.5</ets-kml2.version>
     <ets-security-client10.version>0.6</ets-security-client10.version>
     <ets-owc10.version>0.2</ets-owc10.version>
@@ -52,7 +52,8 @@
     <ets-sta10.version>1.3</ets-sta10.version>
     <ets-wms-client13.version>1.6</ets-wms-client13.version>
     <ets-wps10.version>0.8</ets-wps10.version>
-    <ets-wps20.version>0.2</ets-wps20.version>
+    <ets-wps20.version>0.3</ets-wps20.version>
+    <ets-geopose10.version>0.1</ets-geopose10.version>
     <ets-wfs20-dgiwg.version>0.6</ets-wfs20-dgiwg.version>
     <ets-wms13-dgiwg.version>0.5</ets-wms13-dgiwg.version>
     <ets-wms13-nsg.version>0.4</ets-wms13-nsg.version>
@@ -660,6 +661,21 @@
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-wps20</artifactId>
       <version>${ets-wps20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS GeoPose 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-geopose10</artifactId>
+      <version>${ets-geopose10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-geopose10</artifactId>
+      <version>${ets-geopose10.version}</version>
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
