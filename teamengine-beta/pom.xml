@@ -47,7 +47,6 @@
     <ets-sfs12.version>1.4</ets-sfs12.version>
     <ets-sos10.version>1.14</ets-sos10.version>
     <ets-sos20.version>1.14</ets-sos20.version>
-    <ets-sps10.version>1.8</ets-sps10.version>
     <ets-sps20.version>1.11</ets-sps20.version>
     <ets-sta10.version>1.3</ets-sta10.version>
     <ets-wms-client13.version>1.6</ets-wms-client13.version>
@@ -586,14 +585,6 @@
       <artifactId>ets-sos20</artifactId>
       <version>${ets-sos20.version}</version>
       <classifier>deps</classifier>
-      <type>zip</type>
-    </dependency>
-    <!-- ETS SPS 1.0 -->
-    <dependency>
-      <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-sps10</artifactId>
-      <version>${ets-sps10.version}</version>
-      <classifier>ctl</classifier>
       <type>zip</type>
     </dependency>
     <!-- ETS SPS 2.0 -->
