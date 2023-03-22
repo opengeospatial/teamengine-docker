@@ -82,4 +82,4 @@ A host system directory can be mounted as a data volume with the ```-v``` flag.
 
 This is an example how to mount the ~/te_base/users (Linux syntax) folder (is created if not existing) of host system into Docker Container:
 
-    % docker run -p 8081:8080 -v ~/te_base/users:/root/te_base/users --rm ogccite/teamengine-production
+    % docker run -p 8081:8080 -v ~/te_base/users:/usr/local/tomcat/te_base/users --rm ogccite/teamengine-production
