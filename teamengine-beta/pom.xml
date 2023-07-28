@@ -16,10 +16,10 @@
     <ets-wcs11.version>1.17</ets-wcs11.version>
     <ets-wcs20.version>1.19</ets-wcs20.version>
     <ets-wfs10.version>1.13</ets-wfs10.version>
-    <ets-wfs11.version>1.34</ets-wfs11.version>
+    <ets-wfs11.version>1.36</ets-wfs11.version>
     <ets-wfs20.version>1.40</ets-wfs20.version>
-    <ets-wms11.version>1.21</ets-wms11.version>
-    <ets-wms13.version>1.29</ets-wms13.version>
+    <ets-wms11.version>1.22</ets-wms11.version>
+    <ets-wms13.version>1.30</ets-wms13.version>
     <ets-wmts10.version>1.5</ets-wmts10.version>
     <ets-csw202.version>1.18</ets-csw202.version>
     <ets-cat30.version>1.4</ets-cat30.version>
@@ -32,9 +32,9 @@
     <ets-georss10.version>1.0</ets-georss10.version>
     <ets-eo-geojson10.version>0.2</ets-eo-geojson10.version>
     <ets-ogcapi-edr10.version>1.0</ets-ogcapi-edr10.version>
-    <ets-ogcapi-features10.version>1.4</ets-ogcapi-features10.version>
+    <ets-ogcapi-features10.version>1.5</ets-ogcapi-features10.version>
     <ets-ogcapi-processes10.version>1.0</ets-ogcapi-processes10.version>
-    <ets-cdb10.version>1.0</ets-cdb10.version>
+    <ets-cdb10.version>1.1</ets-cdb10.version>
     <ets-kml22.version>1.15</ets-kml22.version>
     <ets-kml2.version>0.5</ets-kml2.version>
     <ets-security-client10.version>0.6</ets-security-client10.version>

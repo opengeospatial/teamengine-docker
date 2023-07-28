@@ -5,8 +5,6 @@ commons-io-1.3.2.jar
 commons-lang3-3.9.jar
 commons-lang3-3.7.jar
 commons-lang3-3.4.jar
-ets-gml32-1.21.jar
-geomatics-geotk-1.9.jar
 httpcore-4.4.1.jar
 joda-time-2.8.jar
 json-20090211.jar
@@ -14,10 +12,8 @@ json-schema-validator-1.0.66.jar
 jts-1.11.jar
 schema-utils-1.7.jar
 slf4j-api-1.7.20.jar
-xercesImpl-2.12.0.jar
 xercesImpl-2.12.1.jar
 xercesImpl-xsd11-shaded-2.12-beta-r1667115.jar
-commons-io-2.6.jar
 geomatics-geotk-1.15.jar
 jackson-annotations-2.9.0.jar
 jackson-core-2.9.8.jar
