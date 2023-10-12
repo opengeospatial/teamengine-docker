@@ -51,8 +51,8 @@
     <ets-sta10.version>1.3</ets-sta10.version>
     <ets-wms-client13.version>1.6</ets-wms-client13.version>
     <ets-wps10.version>0.8</ets-wps10.version>
-    <ets-wps20.version>0.4</ets-wps20.version>
-    <ets-geopose10.version>0.1</ets-geopose10.version>
+    <ets-wps20.version>1.0</ets-wps20.version>
+    <ets-geopose10.version>1.0</ets-geopose10.version>
     <ets-wfs20-dgiwg.version>0.7</ets-wfs20-dgiwg.version>
     <ets-wms13-dgiwg.version>0.5</ets-wms13-dgiwg.version>
     <ets-wms13-nsg.version>0.5</ets-wms13-nsg.version>
