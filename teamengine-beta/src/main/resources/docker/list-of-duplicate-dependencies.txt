@@ -7,7 +7,6 @@ commons-lang3-3.7.jar
 commons-lang3-3.4.jar
 httpcore-4.4.1.jar
 joda-time-2.8.jar
-json-20090211.jar
 json-schema-validator-1.0.66.jar
 jts-1.11.jar
 schema-utils-1.7.jar
