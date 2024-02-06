@@ -34,7 +34,7 @@
     <ets-ogcapi-edr10.version>1.0</ets-ogcapi-edr10.version>
     <ets-ogcapi-features10.version>1.7</ets-ogcapi-features10.version>
     <ets-ogcapi-processes10.version>1.1</ets-ogcapi-processes10.version>
-    <ets-ogcapi-tiles10.version>0.1</ets-ogcapi-tiles10.version>
+    <ets-ogcapi-tiles10.version>0.2</ets-ogcapi-tiles10.version>
     <ets-cdb10.version>1.1</ets-cdb10.version>
     <ets-kml22.version>1.15</ets-kml22.version>
     <ets-kml2.version>0.5</ets-kml2.version>
