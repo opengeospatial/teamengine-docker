@@ -1,7 +1,9 @@
-FROM tomcat:7.0-jre8
+FROM tomcat:10.1-jre17
 
 MAINTAINER Dirk Stenger <stenger@lat-lon.de>
 MAINTAINER Torsten Friebe <friebe@lat-lon.de>
+
+RUN apt update && apt install -y unzip
 
 # add TEAM engine webapp
 ADD maven/teamengine-web-*.war /root/
@@ -43,8 +45,7 @@ COPY list-of-duplicate-dependencies.txt /usr/local/tomcat/webapps/teamengine/WEB
 RUN rm -rf /usr/local/tomcat/te_base/scripts/note/ \
  && chmod +x /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh \
  && cd /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/ \
- && /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh \
- && mv /usr/local/tomcat/webapps/teamengine/ /usr/local/tomcat/webapps/te2
+ && /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh
 
 RUN useradd tomcat && chown -R tomcat:tomcat /usr/local/tomcat
 
