@@ -44,7 +44,7 @@
     <ets-sos20.version>1.14</ets-sos20.version>
     <ets-sps20.version>1.11</ets-sps20.version>
     <ets-sta10.version>1.3</ets-sta10.version>
-    <ets-wms-client13.version>1.6</ets-wms-client13.version>
+    <ets-wms-client13.version>1.6.1</ets-wms-client13.version>
     <ets-wps20.version>1.0</ets-wps20.version>
     <ets-geopose10.version>1.0</ets-geopose10.version>
   </properties>
