@@ -32,7 +32,7 @@
     <ets-georss10.version>1.0</ets-georss10.version>
     <ets-eo-geojson10.version>1.0</ets-eo-geojson10.version>
     <ets-ogcapi-edr10.version>1.0</ets-ogcapi-edr10.version>
-    <ets-ogcapi-features10.version>1.7</ets-ogcapi-features10.version>
+    <ets-ogcapi-features10.version>1.7.1</ets-ogcapi-features10.version>
     <ets-ogcapi-processes10.version>1.2</ets-ogcapi-processes10.version>
     <ets-ogcapi-tiles10.version>1.0</ets-ogcapi-tiles10.version>
     <ets-cdb10.version>1.1</ets-cdb10.version>
