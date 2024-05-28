@@ -12,26 +12,26 @@
 
   <properties>
     <teamengine.version>5.7</teamengine.version>
-    <ets-wcs10.version>1.18</ets-wcs10.version>
+    <ets-wcs10.version>1.19</ets-wcs10.version>
     <ets-wcs11.version>1.17</ets-wcs11.version>
     <ets-wcs20.version>1.20</ets-wcs20.version>
     <ets-wfs10.version>1.13</ets-wfs10.version>
-    <ets-wfs11.version>1.36</ets-wfs11.version>
-    <ets-wfs20.version>1.40</ets-wfs20.version>
+    <ets-wfs11.version>1.37</ets-wfs11.version>
+    <ets-wfs20.version>1.41</ets-wfs20.version>
     <ets-wms11.version>1.22</ets-wms11.version>
     <ets-wms13.version>1.31</ets-wms13.version>
     <ets-wmts10.version>1.7</ets-wmts10.version>
     <ets-csw202.version>1.18</ets-csw202.version>
-    <ets-cat30.version>1.4</ets-cat30.version>
+    <ets-cat30.version>1.5</ets-cat30.version>
     <ets-gmljpx20.version>1.2</ets-gmljpx20.version>
-    <ets-gml32.version>1.31</ets-gml32.version>
+    <ets-gml32.version>1.32</ets-gml32.version>
     <ets-indoorgml10.version>0.1</ets-indoorgml10.version>
     <ets-gpkg10.version>1.2</ets-gpkg10.version>
     <ets-gpkg12.version>1.1</ets-gpkg12.version>
     <ets-geotiff11.version>1.1</ets-geotiff11.version>
     <ets-georss10.version>1.0</ets-georss10.version>
     <ets-eo-geojson10.version>1.0</ets-eo-geojson10.version>
-    <ets-ogcapi-edr10.version>1.0</ets-ogcapi-edr10.version>
+    <ets-ogcapi-edr10.version>1.1</ets-ogcapi-edr10.version>
     <ets-ogcapi-features10.version>1.7.1</ets-ogcapi-features10.version>
     <ets-ogcapi-processes10.version>1.2</ets-ogcapi-processes10.version>
     <ets-ogcapi-tiles10.version>1.0</ets-ogcapi-tiles10.version>
@@ -55,12 +55,12 @@
     <ets-wps20.version>1.0</ets-wps20.version>
     <ets-geopose10.version>1.0</ets-geopose10.version>
     <ets-citygml20.version>0.2</ets-citygml20.version>
-    <ets-wfs20-dgiwg.version>0.7</ets-wfs20-dgiwg.version>
+    <ets-wfs20-dgiwg.version>0.8</ets-wfs20-dgiwg.version>
     <ets-wms13-dgiwg.version>0.5</ets-wms13-dgiwg.version>
     <ets-wms13-nsg.version>0.5</ets-wms13-nsg.version>
-    <ets-wfs20-nsg.version>0.6</ets-wfs20-nsg.version>
+    <ets-wfs20-nsg.version>0.7</ets-wfs20-nsg.version>
     <ets-wmts10-nsg.version>0.4</ets-wmts10-nsg.version>
-    <ets-gpkg12-nsg.version>0.7</ets-gpkg12-nsg.version>
+    <ets-gpkg12-nsg.version>0.8</ets-gpkg12-nsg.version>
     <ets-cat20-dgiwg10.version>0.4</ets-cat20-dgiwg10.version>
   </properties>
 
