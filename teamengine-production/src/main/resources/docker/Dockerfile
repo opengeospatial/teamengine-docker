@@ -45,15 +45,6 @@ RUN rm -rf /usr/local/tomcat/te_base/scripts/note/ \
  && cd /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/ \
  && /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh
 
-# See https://github.com/opengeospatial/ets-wms-client13/issues/73 for more information
-RUN sed -i 's|\
-  </Host>|\
-    <Valve className="org.apache.catalina.valves.RemoteIpValve" \
-      remoteIpHeader="X-Forwarded-For" \
-      protocolHeader="X-Forwarded-Proto"/>\
-  </Host>|' \
-  /usr/local/tomcat/conf/server.xml
-
 RUN useradd tomcat && chown -R tomcat:tomcat /usr/local/tomcat
 
 USER tomcat
