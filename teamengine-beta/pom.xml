@@ -14,12 +14,12 @@
     <teamengine.version>5.7</teamengine.version>
     <ets-wcs10.version>1.19</ets-wcs10.version>
     <ets-wcs11.version>1.17</ets-wcs11.version>
-    <ets-wcs20.version>1.20</ets-wcs20.version>
+    <ets-wcs20.version>1.21</ets-wcs20.version>
     <ets-wfs10.version>1.13</ets-wfs10.version>
     <ets-wfs11.version>1.37</ets-wfs11.version>
     <ets-wfs20.version>1.41</ets-wfs20.version>
     <ets-wms11.version>1.22</ets-wms11.version>
-    <ets-wms13.version>1.31</ets-wms13.version>
+    <ets-wms13.version>1.32</ets-wms13.version>
     <ets-wmts10.version>1.8</ets-wmts10.version>
     <ets-csw202.version>1.18</ets-csw202.version>
     <ets-cat30.version>1.5</ets-cat30.version>
@@ -34,7 +34,7 @@
     <ets-ogcapi-edr10.version>1.1</ets-ogcapi-edr10.version>
     <ets-ogcapi-features10.version>1.7.1</ets-ogcapi-features10.version>
     <ets-ogcapi-processes10.version>1.2</ets-ogcapi-processes10.version>
-    <ets-ogcapi-tiles10.version>1.0</ets-ogcapi-tiles10.version>
+    <ets-ogcapi-tiles10.version>1.1</ets-ogcapi-tiles10.version>
     <ets-cdb10.version>1.1</ets-cdb10.version>
     <ets-kml22.version>1.15</ets-kml22.version>
     <ets-kml2.version>0.5</ets-kml2.version>
@@ -55,6 +55,7 @@
     <ets-wps20.version>1.0</ets-wps20.version>
     <ets-geopose10.version>1.0</ets-geopose10.version>
     <ets-citygml20.version>0.2</ets-citygml20.version>
+    <ets-citygml30-part2.version>0.1</ets-citygml30-part2.version>
     <ets-wfs20-dgiwg.version>0.8</ets-wfs20-dgiwg.version>
     <ets-wms13-dgiwg.version>0.5</ets-wms13-dgiwg.version>
     <ets-wms13-nsg.version>0.5</ets-wms13-nsg.version>
@@ -699,6 +700,21 @@
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-citygml20</artifactId>
       <version>${ets-citygml20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
+    <!-- ETS CityGML 3.0 - Part 2 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-citygml30-part2</artifactId>
+      <version>${ets-citygml30-part2.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-citygml30-part2</artifactId>
+      <version>${ets-citygml30-part2.version}</version>
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
