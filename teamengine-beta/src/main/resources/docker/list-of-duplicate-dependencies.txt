@@ -25,3 +25,4 @@ teamengine-realm-5.4.1.jar
 teamengine-resources-5.4.1.jar
 teamengine-console-5.4.1-base.zip
 teamengine-web-5.4.1.war
+ets-wfs20-1.41.jar
