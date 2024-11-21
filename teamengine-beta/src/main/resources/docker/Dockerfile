@@ -29,15 +29,11 @@ RUN cd /root/ && for file in ets-*-ctl.zip; do unzip -q $file -d /usr/local/tomc
 ADD maven/ets-*-deps.zip /root/
 RUN cd /root/ && for file in ets-*-deps.zip; do unzip -q -o $file -d /usr/local/tomcat/webapps/teamengine/WEB-INF/lib; done
 
-RUN sed -i s/security.debian.org/archive.debian.org/g /etc/apt/sources.list \
-    && sed -i s/deb.debian.org/archive.debian.org/g /etc/apt/sources.list \
-    && sed -i "s/deb http:\/\/archive.debian.org\/debian stretch-updates main/#deb http:\/\/archive.debian.org\/debian stretch-updates main/g" /etc/apt/sources.list
-
-RUN apt-get update && apt-get upgrade -y \
- && apt-get install -y \
-    libtiff-tools \
- && apt-get clean \
- && rm -rf /var/lib/apt/lists/*
+#RUN apt-get update && apt-get upgrade -y \
+# && apt-get install -y \
+#    libtiff-tools \
+# && apt-get clean \
+# && rm -rf /var/lib/apt/lists/*
 
 COPY delete-duplicate-dependencies.sh /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/delete-duplicate-dependencies.sh
 COPY list-of-duplicate-dependencies.txt /usr/local/tomcat/webapps/teamengine/WEB-INF/lib/list-of-duplicate-dependencies.txt
