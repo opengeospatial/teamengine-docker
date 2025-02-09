@@ -23,27 +23,27 @@
 <!--    <ets-wmts10.version>1.6</ets-wmts10.version>-->
 <!--    <ets-csw202.version>1.18</ets-csw202.version>-->
     <ets-cat30.version>1.6</ets-cat30.version>
-<!--    <ets-gmljpx20.version>1.2</ets-gmljpx20.version>-->
+    <ets-gmljpx20.version>1.3</ets-gmljpx20.version>
     <ets-gml32.version>1.33</ets-gml32.version>
 <!--    <ets-indoorgml10.version>0.1</ets-indoorgml10.version>-->
-<!--    <ets-gpkg10.version>1.2</ets-gpkg10.version>-->
+    <ets-gpkg10.version>1.3</ets-gpkg10.version>
     <ets-gpkg12.version>1.3</ets-gpkg12.version>
-<!--    <ets-geotiff11.version>1.1</ets-geotiff11.version>-->
+    <ets-geotiff11.version>1.2</ets-geotiff11.version>
     <ets-georss10.version>1.1</ets-georss10.version>
     <ets-eo-geojson10.version>1.1</ets-eo-geojson10.version>
     <ets-ogcapi-edr10.version>1.3</ets-ogcapi-edr10.version>
     <ets-ogcapi-features10.version>1.9</ets-ogcapi-features10.version>
     <ets-ogcapi-processes10.version>1.3</ets-ogcapi-processes10.version>
     <ets-ogcapi-tiles10.version>1.2</ets-ogcapi-tiles10.version>
-<!--    <ets-cdb10.version>1.1</ets-cdb10.version>-->
-<!--    <ets-kml22.version>1.15</ets-kml22.version>-->
+    <ets-cdb10.version>1.2</ets-cdb10.version>
+    <ets-kml22.version>1.16</ets-kml22.version>
 <!--    <ets-kml2.version>0.5</ets-kml2.version>-->
 <!--    <ets-security-client10.version>0.6</ets-security-client10.version>-->
 <!--    <ets-owc10.version>0.2</ets-owc10.version>-->
     <ets-omxml20.version>1.2</ets-omxml20.version>
-<!--    <ets-swecommon20.version>1.1</ets-swecommon20.version>-->
+    <ets-swecommon20.version>1.2</ets-swecommon20.version>
 <!--    <ets-sensorml10.version>1.0.1</ets-sensorml10.version>-->
-<!--    <ets-sensorml20.version>1.0</ets-sensorml20.version>-->
+    <ets-sensorml20.version>1.1</ets-sensorml20.version>
 <!--    <ets-sfs11.version>1.8</ets-sfs11.version>-->
 <!--    <ets-sfs12.version>1.4</ets-sfs12.version>-->
 <!--    <ets-sos10.version>1.14</ets-sos10.version>-->
@@ -52,7 +52,7 @@
     <ets-sta10.version>1.5</ets-sta10.version>
 <!--    <ets-wms-client13.version>1.6</ets-wms-client13.version>-->
 <!--    <ets-wps10.version>0.8</ets-wps10.version>-->
-<!--    <ets-wps20.version>1.0</ets-wps20.version>-->
+    <ets-wps20.version>1.1</ets-wps20.version>
     <ets-geopose10.version>1.1</ets-geopose10.version>
 <!--    <ets-citygml20.version>0.2</ets-citygml20.version>-->
 <!--    <ets-wfs20-dgiwg.version>0.7</ets-wfs20-dgiwg.version>-->
@@ -257,21 +257,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
-<!--    &lt;!&ndash; ETS gmljpx20 &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-gmljpx20</artifactId>-->
-<!--      <version>${ets-gmljpx20.version}</version>-->
-<!--      <classifier>ctl</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-gmljpx20</artifactId>-->
-<!--      <version>${ets-gmljpx20.version}</version>-->
-<!--      <classifier>deps</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
+    <!-- ETS gmljpx20 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-gmljpx20</artifactId>
+      <version>${ets-gmljpx20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-gmljpx20</artifactId>
+      <version>${ets-gmljpx20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS GML 3.2 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -302,21 +302,21 @@
 <!--      <classifier>deps</classifier>-->
 <!--      <type>zip</type>-->
 <!--    </dependency>-->
-<!--    &lt;!&ndash; ETS GeoPackage 1.0 &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-gpkg10</artifactId>-->
-<!--      <version>${ets-gpkg10.version}</version>-->
-<!--      <classifier>ctl</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-gpkg10</artifactId>-->
-<!--      <version>${ets-gpkg10.version}</version>-->
-<!--      <classifier>deps</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
+    <!-- ETS GeoPackage 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-gpkg10</artifactId>
+      <version>${ets-gpkg10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-gpkg10</artifactId>
+      <version>${ets-gpkg10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS GeoPackage 1.2 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -332,21 +332,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
-<!--    &lt;!&ndash; ETS GeoTiff 1.1 &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-geotiff11</artifactId>-->
-<!--      <version>${ets-geotiff11.version}</version>-->
-<!--      <classifier>ctl</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-geotiff11</artifactId>-->
-<!--      <version>${ets-geotiff11.version}</version>-->
-<!--      <classifier>deps</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
+    <!-- ETS GeoTiff 1.1 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-geotiff11</artifactId>
+      <version>${ets-geotiff11.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-geotiff11</artifactId>
+      <version>${ets-geotiff11.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS GeoRSS 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -377,21 +377,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
-<!--    &lt;!&ndash; ETS OGC CDB 1.0 &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-cdb10</artifactId>-->
-<!--      <version>${ets-cdb10.version}</version>-->
-<!--      <classifier>ctl</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-cdb10</artifactId>-->
-<!--      <version>${ets-cdb10.version}</version>-->
-<!--      <classifier>deps</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
+    <!-- ETS OGC CDB 1.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-cdb10</artifactId>
+      <version>${ets-cdb10.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-cdb10</artifactId>
+      <version>${ets-cdb10.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS OGC API - EDR 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
@@ -452,21 +452,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
-<!--    &lt;!&ndash; ETS KML 2.2 &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-kml22</artifactId>-->
-<!--      <version>${ets-kml22.version}</version>-->
-<!--      <classifier>ctl</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-kml22</artifactId>-->
-<!--      <version>${ets-kml22.version}</version>-->
-<!--      <classifier>deps</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
+    <!-- ETS KML 2.2 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-kml22</artifactId>
+      <version>${ets-kml22.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-kml22</artifactId>
+      <version>${ets-kml22.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
 <!--    &lt;!&ndash; ETS KML 2 &ndash;&gt;-->
 <!--    <dependency>-->
 <!--      <groupId>org.opengis.cite</groupId>-->
@@ -527,21 +527,21 @@
       <classifier>deps</classifier>
       <type>zip</type>
     </dependency>
-<!--    &lt;!&ndash; ETS SWE Common Data Model Encoding Standard 2.0 &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-swecommon20</artifactId>-->
-<!--      <version>${ets-swecommon20.version}</version>-->
-<!--      <classifier>ctl</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-swecommon20</artifactId>-->
-<!--      <version>${ets-swecommon20.version}</version>-->
-<!--      <classifier>deps</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
+    <!-- ETS SWE Common Data Model Encoding Standard 2.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-swecommon20</artifactId>
+      <version>${ets-swecommon20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-swecommon20</artifactId>
+      <version>${ets-swecommon20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
 <!--    &lt;!&ndash; ETS Sensor Model Language 1.0 &ndash;&gt;-->
 <!--    <dependency>-->
 <!--      <groupId>org.opengis.cite</groupId>-->
@@ -550,21 +550,21 @@
 <!--      <classifier>ctl</classifier>-->
 <!--      <type>zip</type>-->
 <!--    </dependency>-->
-<!--    &lt;!&ndash; ETS Sensor Model Language 2.0 &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-sensorml20</artifactId>-->
-<!--      <version>${ets-sensorml20.version}</version>-->
-<!--      <classifier>ctl</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-sensorml20</artifactId>-->
-<!--      <version>${ets-sensorml20.version}</version>-->
-<!--      <classifier>deps</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
+    <!-- ETS Sensor Model Language 2.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-sensorml20</artifactId>
+      <version>${ets-sensorml20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-sensorml20</artifactId>
+      <version>${ets-sensorml20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
 <!--    &lt;!&ndash; ETS SFS 1.1 &ndash;&gt;-->
 <!--    <dependency>-->
 <!--      <groupId>org.opengis.cite</groupId>-->
@@ -657,21 +657,21 @@
 <!--      <classifier>deps</classifier>-->
 <!--      <type>zip</type>-->
 <!--    </dependency>-->
-<!--    &lt;!&ndash; ETS WPS 2.0 &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-wps20</artifactId>-->
-<!--      <version>${ets-wps20.version}</version>-->
-<!--      <classifier>ctl</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.opengis.cite</groupId>-->
-<!--      <artifactId>ets-wps20</artifactId>-->
-<!--      <version>${ets-wps20.version}</version>-->
-<!--      <classifier>deps</classifier>-->
-<!--      <type>zip</type>-->
-<!--    </dependency>-->
+    <!-- ETS WPS 2.0 -->
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wps20</artifactId>
+      <version>${ets-wps20.version}</version>
+      <classifier>ctl</classifier>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-wps20</artifactId>
+      <version>${ets-wps20.version}</version>
+      <classifier>deps</classifier>
+      <type>zip</type>
+    </dependency>
     <!-- ETS GeoPose 1.0 -->
     <dependency>
       <groupId>org.opengis.cite</groupId>
