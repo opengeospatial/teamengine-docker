@@ -1,4 +1,4 @@
-FROM tomcat:10.1-jre17
+FROM tomcat:10.1.39-jre17
 
 MAINTAINER Dirk Stenger <stenger@lat-lon.de>
 MAINTAINER Torsten Friebe <friebe@lat-lon.de>
