@@ -120,6 +120,7 @@
   <modules>
     <module>teamengine-production</module>
     <module>teamengine-beta</module>
+    <module>teamengine-dev</module>
   </modules>
 
   <repositories>
