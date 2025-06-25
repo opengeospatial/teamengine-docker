@@ -1,9 +1,5 @@
 pipeline {
   agent any
-  tools {
-    maven 'mvn396'
-    jdk 'temurin-jdk17'
-  }
   stages {
     stage('Remove old and create and start new container') {
       steps{
