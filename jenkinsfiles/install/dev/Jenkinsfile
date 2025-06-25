@@ -1,0 +1,21 @@
+pipeline {
+  agent any
+  tools {
+    maven 'mvn396'
+    jdk 'temurin-jdk17'
+  }
+  stages {
+    stage('Remove old and create and start new container') {
+      steps{
+        sh '''
+          $SSH_COMMAND "
+          sudo -u docker docker rm -f teamengine-dev
+          sudo -u docker docker pull ogccite/teamengine-dev:latest
+          mkdir -p te-dev-users
+          sudo -u docker docker run -d --name teamengine-dev -p 8083:8080 -v ~/te-dev-users:/usr/local/tomcat/te_base/users --restart unless-stopped ogccite/teamengine-dev:latest
+          "
+          '''
+      }
+    }
+  }
+}
