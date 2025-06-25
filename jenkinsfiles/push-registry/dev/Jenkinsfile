@@ -1,0 +1,28 @@
+pipeline {
+  agent any
+  tools {
+    maven 'mvn396'
+    jdk 'temurin-jdk17'
+  }
+  stages {
+    stage('Initialize') {
+      steps{
+        sh '''
+          echo "PATH = ${PATH}"
+          echo "M2_HOME = ${M2_HOME}"
+        '''
+        sh 'mvn --version'
+      }
+    }
+    stage('Build and push to Docker Registry') {
+      steps{
+        sh 'cd teamengine-dev && mvn clean install docker:push'
+      }
+    }
+    stage('Cleanup') {
+      steps{
+        deleteDir()
+      }
+    }
+  }
+}
