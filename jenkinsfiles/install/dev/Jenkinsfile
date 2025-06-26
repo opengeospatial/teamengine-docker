@@ -7,7 +7,7 @@ pipeline {
           $SSH_COMMAND "
           sudo -u docker docker rm -f teamengine-dev
           sudo -u docker docker pull ogccite/teamengine-dev:latest
-          sudo -u docker docker run -d --name teamengine-dev -p 8083:8080 --restart unless-stopped ogccite/teamengine-dev:latest
+          sudo -u docker docker run -d --name teamengine-dev -p 8083:8080 -v /srv/local/team.dat/te-alpha-users1:/usr/local/tomcat/te_base/users --restart unless-stopped ogccite/teamengine-dev:latest
           "
           '''
       }
